@@ -120,7 +120,7 @@ nav {
 
 .burger div {
     width: 43px;
-    height: 8px;
+    height: 5px;
     background-color: #DD1F4B;
     margin: 5px;
     transition: all 0.5s ease;
@@ -169,7 +169,7 @@ nav {
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-7px, 7px);
 }
 
 .toggle .line2 {
@@ -177,7 +177,7 @@ nav {
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-7px, -7px);
 }
 
 
@@ -223,28 +223,85 @@ nav {
 /* ------------for footer ------------*/
 
 footer {
-    background: #0D1132;
     display: flex;
     flex-direction: column;
     text-align: center;
+    height: 980px;
 }
 
-.footerInfo ul li {
+.footerEmail {
+    height: 360px;
+    background-color: #1c2366;
+}
+
+.footerEmail p {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 104px;
+}
+
+.footerSend {
+    margin-top: 47px;
+}
+
+.inputhomeArea {
+    width: 672px;
+    height: 75px;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+body input::placeholder {
+    font-weight: bold;
+    color: #ADADAD;
+    padding-left: 40px;
+}
+
+.footerSend a {
+    display: inline-block;
+    width: 210px;
+    padding: 30px 70px 26px 70px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.footerInfo {
+    background-color: #0D1132;
+    height: 620px;
+}
+
+.footerLogo {
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+
+.footerContact ul li {
     color: white;
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 15px;
 }
 
 .SocialMedia {
     text-align: center;
+    margin-top: 35px;
 }
 
 .SocialMedia ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
+    width: 10%;
+    justify-content: space-evenly;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -256,6 +313,5 @@ footer {
 
 .copyRight {
     color: white;
+    margin-top: 90px;
 }
-
-.mainfooter {}
