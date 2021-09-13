@@ -1,0 +1,20 @@
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mainheader {
+
+}
+
+.sitecontainer {
+  margin: 0 auto;
+  display: grid;
+}
+
+.mainfooter {
+
+}
