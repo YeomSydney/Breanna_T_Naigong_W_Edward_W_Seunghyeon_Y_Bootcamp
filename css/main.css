@@ -190,7 +190,33 @@ nav {
     margin: 0 auto;
     display: grid;
 }
+.eyecatcher {
+  width: auto;
+  height: 826px;
+  padding: 100px;
+  background-image: url(../images/eyecatcher_tablet.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+/* TABLET SIZE - HOME PAGE ================================ */
+@media screen and (min-width: 768px) {
+  .eyecatcher {
+    height: 1240px;
+    background-image: url(../images/eyecatcher_desktop.jpg);
+  }
+}
+/* DESKTOP SIZE - HOME PAGE =============================== */
+@media screen and (min-width: 1140px) {
+  .eyecatcher {
+    height: 915px;
+  }
+}
 
 /* -------------------------------- HOME PAGE END ------------------------------ */
 
