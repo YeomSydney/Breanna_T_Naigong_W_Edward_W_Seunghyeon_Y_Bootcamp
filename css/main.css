@@ -41,7 +41,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin-top: 40px;
+    margin: 20px 0px;
 }
 
 a {
@@ -189,7 +189,55 @@ nav {
 .homeContainer {
     margin: 0 auto;
     display: grid;
+    
 }
+
+    .heroBanner {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 825px;
+        padding:157px 60px;
+        background-color: #999;
+        color:white;
+    }
+
+    .heroWWYT{
+        font-weight:900;
+        font-size: 70px;
+        letter-spacing: -0.17em;
+
+    }
+
+    .heroSubtitle{
+        font-weight: 600;
+        font-size: 18px;
+        padding:105px 0px;
+    }
+
+    .heroTitle{
+        font-weight: 900;
+        font-size: 32px;
+        padding-bottom: 60px;
+    }
+
+    .heroButton{
+        font-weight: 600;
+        font-size: 21px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 7px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .heroSubtitle{ 
+            color:red;
+        }
+    }    
+
+
 
 
 /* -------------------------------- HOME PAGE END ------------------------------ */
@@ -291,7 +339,7 @@ body input::placeholder {
 
 .SocialMedia {
     text-align: center;
-    margin-top: 35px;
+    margin-top:35px;
 }
 
 .SocialMedia ul {
@@ -308,6 +356,7 @@ body input::placeholder {
     list-style-type: none;
     width: 40px;
     height: 40px;
+    padding: 2px;
 }
 
 .copyRight {
