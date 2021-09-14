@@ -1,3 +1,38 @@
+@font-face {
+    font-family: 'montserratblack';
+    src: url('montserrat-black-webfont.woff2') format('woff2'),
+         url('montserrat-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('montserrat-bold-webfont.woff2') format('woff2'),
+         url('montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('montserrat-medium-webfont.woff2') format('woff2'),
+         url('montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratsemibold';
+    src: url('montserrat-semibold-webfont.woff2') format('woff2'),
+         url('montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .hidden {
     display: none;
 }
@@ -202,7 +237,9 @@ nav {
 
 
 /* -------------------------------- PORTFOLIO PAGE ------------------------------ */
-
+.portfolioContent{
+    margin: 0 auto;
+}
 
 /* -------------------------------- PORTFOLIO PAGE END------------------------------ */
 
