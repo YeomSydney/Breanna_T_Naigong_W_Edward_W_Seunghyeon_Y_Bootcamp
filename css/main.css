@@ -334,7 +334,57 @@ nav {
   background-color: #1C2366;
   align-items: center;
 }
-
+.indexVideo {
+  width: 400px;
+  margin: 30px 0px 50px 0px;
+}
+.aboutSection {
+  background-image: url(../images/index_page/backgroundcloud.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  overflow: hidden;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.aboutSection p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+  max-width: 330px;
+}
+.faces {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+}
+.faces img {
+  width: 165px;
+  border-radius: 200px;
+}
+.aboutButton {
+  background-color: #1C2366;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutButton p {
+  margin-top: 0px;
+}
+.aboutButton:hover {
+  background-color: #fff;
+  color: #1C2366;
+}
 
 /* TABLET SIZE - HOME PAGE ================================ */
 @media screen and (min-width: 768px) {
@@ -364,6 +414,12 @@ nav {
   .portfolioContainer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+  }
+  .indexVideo {
+    width: 610px;
+  }
+  .faces img {
+    width: 295px;
   }
 }
 /* DESKTOP SIZE - HOME PAGE =============================== */
@@ -397,6 +453,16 @@ nav {
   }
   .portfolioInfo {
     width: 300px;
+  }
+  .indexVideo {
+    width: 1050px;
+  }
+  .faces {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+  }
+  .faces img {
+    width: 250px;
   }
 }
 
