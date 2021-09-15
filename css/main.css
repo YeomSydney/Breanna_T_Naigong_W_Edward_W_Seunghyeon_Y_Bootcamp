@@ -497,6 +497,115 @@ nav {
 
 /* -------------------------------- CONTACT PAGE ------------------------------ */
 
+.ContactContent>.eyecatcher{
+  justify-content: space-around;
+  padding: 100px 0px 100px 0px;
+  height: 800px;
+}
+.dividerLine {
+  width: 120px;
+  height: 8px;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+.contactDetail {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  width: 350px;
+}
+.phones {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.location {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.hours {
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.formBox {
+  background-color: #C0D8EB;
+  padding: 100px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactInput {
+  width: 400px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+option, .developer {
+  font-weight: bold;
+  color: #ADADAD;
+  padding-left: 40px;
+}
+.messageBox {
+  padding-left: 40px;
+  width: 400px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 40px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
+  .contactDetail {
+    width: 500px;
+  }
+  .contactInput {
+    width: 672px;
+    height: 75px;
+    font-size: 30px;
+  }
+  .messageBox {
+    width: 672px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .contactDetail {
+    font-size: 30px;
+    width: 700px;
+  }
+  .dividerLine {
+    width: 145px;
+  }
+  .ContactContent>.eyecatcher{
+    padding: 80px 0px 40px 0px;
+  }
+  .contactInput {
+    width: 850px;
+    height: 75px;
+    font-size: 30px;
+  }
+  .messageBox {
+    width: 850px;
+    font-size: 30px;
+  }
+}
 
 /* -------------------------------- CONTACT PAGE END------------------------------ */
 
@@ -538,6 +647,10 @@ body input::placeholder {
     font-weight: bold;
     color: #ADADAD;
     padding-left: 40px;
+}
+textarea::placeholder {
+    font-weight: bold;
+    color: #ADADAD;
 }
 
 .footerSend a {
