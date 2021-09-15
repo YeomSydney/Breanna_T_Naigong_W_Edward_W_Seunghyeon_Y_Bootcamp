@@ -42,10 +42,23 @@ header {
     flex-direction: column;
     background-color: white;
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 a {
     text-decoration: none;
+}
+
+.headerLogo {
+    width: 50%;
+    margin-left: 50px;
+}
+
+@media screen and (max-width:426px) {
+    .headerLogo {
+        width: 196px;
+        height: 60px;
+    }
 }
 
 
@@ -124,7 +137,7 @@ nav {
     background-color: #DD1F4B;
     margin: 5px;
     transition: all 0.5s ease;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 @media screen and (max-width: 800px) {
@@ -135,7 +148,7 @@ nav {
         position: fixed;
         right: 0px;
         height: 50vh;
-        top: 8.2rem;
+        top: 7rem;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -186,11 +199,1101 @@ nav {
 
 /* -------------------------------- HOME PAGE ------------------------------ */
 
+.homeContainer {
+    margin: 0 auto;
+    display: grid;
+}
+.eyecatcher {
+  width: auto;
+  height: 826px;
+  padding: 100px;
+  background-image: url(../images/eyecatcher_tablet.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wwytTitle {
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.eyecatcherDetail {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.tagline {
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.eyecatcherButton {
+  background-color: #fff;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #1C2366;
+}
+.buttontext {
+  font-weight: bold;
+  font-size: 20px;
+}
+.eyecatcherButton:hover {
+  background-color: #1C2366;
+  color: #fff;
+}
+.cloudSection {
+  background-image: url(../images/index_page/backgroundcloud.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  width: auto;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px;
+}
+.cloudTitle {
+  color: #1C2366;
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+}
+.cloudSection p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+  max-width: 330px;
+}
+.promoSection {
+  background-color: #1C2366;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promoTitle {
+  color: #C0D8EB;
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+  margin: 50px 0px 20px 0px;
+  max-width: 300px;
+}
+.promoTitle + p {
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  max-width: 400px;
+}
+.portfolioContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 30px;
+}
+.portfolioImage {
+  width: 190px;
+  height: 190px;
+  border-radius: 10px 10px 0px 0px;
+}
+.portfolioInfo {
+  width: 190px;
+  height: 190px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #73B4D8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.portfolioTitle {
+  color: #1C2366;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+.blackLine {
+  width: 40px;
+  height: 5px;
+  background-color: #1C2366;
+}
+.portfolioDetail {
+  text-align: center;
+  font-weight: normal;
+  font-size: 15px;
+  color: #000;
+}
+#closerlook {
+  width: 250px;
+}
+.videoBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #1C2366;
+  align-items: center;
+}
+.indexVideo {
+  width: 400px;
+  margin: 30px 0px 50px 0px;
+}
+.aboutSection {
+  background-image: url(../images/index_page/backgroundcloud.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  overflow: hidden;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.aboutSection>.cloudTitle {
+  max-width: 400px;
+}
+.aboutSection p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+  max-width: 330px;
+}
+.faces {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+}
+.faces img {
+  width: 165px;
+  border-radius: 200px;
+}
+.aboutButton {
+  background-color: #1C2366;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 30px 0px 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutButton p {
+  margin-top: 0px;
+}
+.aboutButton:hover {
+  background-color: #fff;
+  color: #1C2366;
+}
+
+/* TABLET SIZE - HOME PAGE ================================ */
+@media screen and (min-width: 800px) {
+  .eyecatcher {
+    height: 910px;
+    background-image: url(../images/eyecatcher_desktop.jpg);
+  }
+  .eyecatcherDetail {
+    font-size: 30px;
+  }
+  .tagline {
+    font-size: 62px;
+  }
+  .cloudSection {
+    height: 415px;
+  }
+  .cloudSection p {
+    max-width: 550px;
+  }
+  .promoTitle + p {
+    font-size: 30px;
+    max-width: 700px;
+  }
+  .promoTitle {
+    max-width: 550px;
+  }
+  .portfolioContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .indexVideo {
+    width: 610px;
+  }
+  .faces img {
+    width: 295px;
+  }
+}
+/* DESKTOP SIZE - HOME PAGE =============================== */
+@media screen and (min-width: 1140px) {
+  .eyecatcher {
+    height: 915px;
+    padding: 50px;
+  }
+  .eyecatcherDetail {
+    font-size: 40px;
+  }
+  .tagline {
+    font-size: 95px;
+  }
+  .cloudSection {
+    height: 640px;
+  }
+  .cloudSection p {
+    text-align: center;
+    font-size: 30px;
+    max-width: 775px;
+  }
+  .promoTitle {
+    margin-top: 100px;
+    font-size: 50px;
+    max-width: 800px;
+  }
+  .portfolioImage {
+    width: 300px;
+    height: 300px;
+  }
+  .portfolioInfo {
+    width: 300px;
+  }
+  .indexVideo {
+    width: 1050px;
+  }
+  .aboutSection>.cloudTitle {
+    max-width: 800px;
+  }
+  .faces {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    height: 250px;
+  }
+  .faces img {
+    width: 250px;
+  }
+}
 
 /* -------------------------------- HOME PAGE END ------------------------------ */
 
 
 /* -------------------------------- ABOUT PAGE ------------------------------ */
+
+
+/* --------------------about page content start-------------------------- */
+
+
+/* ------------about page banner------------ */
+
+.aboutBanner {
+    background: url(../images/about_page/pc-banner-about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    height: 915px;
+}
+
+.aboutBanner p {
+    font-size: 95px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding-top: 400px;
+}
+
+
+/* ------------about page banner end------------ */
+
+
+/* --------------- wwyt Intro ------------------ */
+
+.wwytIntro {
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-direction: row;
+    background-color: #1C2366;
+}
+
+.leftIntro {
+    width: 50%;
+    height: 1080px;
+    background: url(../images/about_page/pc-about-computer-intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rightIntro {
+    width: 50%;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightIntroBox {
+    width: 70%;
+    height: 792px;
+    margin: 0 auto;
+}
+
+.rightIntro h3 {
+    font-size: 55px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.rightIntro h4 {
+    font-size: 43px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 35px;
+}
+
+.rightIntro p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.rightIntro p:nth-child(3) {
+    margin-top: 125px;
+    text-indent: 30px;
+    line-height: 32px;
+}
+
+.rightIntro p:nth-child(4) {
+    margin-top: 50px;
+    text-indent: 30px;
+    line-height: 32px;
+}
+
+.rightIntro p:nth-child(5) {
+    margin-top: 50px;
+}
+
+
+/*-------------- wwyt Intro end ----------------- */
+
+
+/* --------------------------- Bio start -------------------------- */
+
+.teamBio {
+    display: flex;
+    flex-direction: column;
+}
+
+.bioSlogan {
+    width: 100%;
+    height: 533px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bioSlogan h3 {
+    font-size: 65px;
+    font-weight: bold;
+    color: #1C2366;
+    margin-top: 200px;
+}
+
+.bioSlogan h4 {
+    font-size: 30px;
+    color: black;
+}
+
+.bioSlogan h4:nth-child(2) {
+    margin-top: 30px;
+}
+
+.bioSlogan h4:nth-child(3) {
+    margin-top: 10px;
+}
+
+.teamPortraitButton {
+    width: 100%;
+}
+
+.teamPortraitButton ul li {
+    float: left;
+}
+
+.wang,
+.yeom,
+.willems,
+.trachsell {
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+
+.hoverText {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: ease-in-out 0.6s;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(8px);
+}
+
+.overlay {
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1C2366;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+}
+
+.photo:hover .hoverText {
+    opacity: 90%;
+    transform: scale(1.01);
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+
+/* ------------------ portrait dynamic part ------------------- */
+
+
+/* --------------- light box style------------- */
+
+.teamBio {
+    position: relative;
+}
+
+.lightBox {
+    width: 100%;
+    height: 1080px;
+    background: url(../images/about_page/pc_lightBox_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    top: 35%;
+    display: none;
+}
+
+.show-lightbox {
+    display: block;
+}
+
+.lightBoxButton {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    position: absolute;
+    left: 90%;
+    top: 0;
+}
+
+.lightBox .close {
+    margin-top: 85px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+    background-color: #1C2366;
+}
+
+.close:hover {
+    color: #DD1F4B;
+    transition: .5s;
+}
+
+.lightBox .next {
+    margin-top: 392px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+    background-color: #1C2366;
+}
+
+
+/* ------------------------------------- */
+
+.lightBoxBio {
+    display: flex;
+    flex-direction: row;
+    width: 78%;
+    height: 700px;
+    margin-top: 135px;
+    margin-left: 200px;
+}
+
+.leftBox {
+    width: 36%;
+    height: 700px;
+    text-align: center;
+}
+
+#portraitContainer {
+    width: 530px;
+    height: 530px;
+    -moz-border-radius: 265px;
+    -webkit-border-radius: 265px;
+    border-radius: 265px;
+    background-image: url(../images/about_page/001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bio-name {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.bio-email {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.bio-phone {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* ------------------------------------ */
+
+.rightBox {
+    width: 60%;
+    height: 80%;
+    position: relative;
+    margin-left: 150px;
+}
+
+.bio-Info {
+    font-size: 20px;
+    line-height: 40px;
+    text-indent: 50px;
+}
+
+.contactButton {
+    display: block;
+    width: 210px;
+    height: 75px;
+    background-color: #1C2366;
+    border-radius: 7px;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 75px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contactButton:hover {
+    filter: brightness(120%);
+    transition: ease-in-out 1s;
+    color: #DD1F4B;
+}
+
+
+/* --------------------------- Bio end  --------------------------- */
+
+
+/* ------------------- About page media query kick in -------------------*/
+
+
+/* for banner img */
+
+@media screen and (max-width:428px) {
+    .aboutBanner {
+        background: url(../images/about_page/m-banner-about.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 826px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .aboutBanner {
+        background: url(../images/about_page/t-banner-about.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 1240px;
+    }
+}
+
+
+/* for banner h3 */
+
+@media screen and (max-width:768px) {
+    .aboutBanner p {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .aboutBanner p {
+        font-size: 45px;
+    }
+}
+
+
+/* for wwytIntro */
+
+@media screen and (max-width:1436px) {
+    .rightIntro h3 {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .rightIntro h4 {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: right;
+        margin-top: 30px;
+    }
+    .rightIntro p:nth-child(3) {
+        margin-top: 100px;
+        text-indent: 30px;
+        line-height: 28px;
+    }
+    .rightIntro p {
+        font-size: 23px;
+        text-align: justify;
+    }
+    .rightIntro p:nth-child(4) {
+        margin-top: 45px;
+        text-indent: 30px;
+        line-height: 28px;
+    }
+    .rightIntro p:nth-child(5) {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .rightIntro h3 {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .rightIntro h4 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: right;
+        margin-top: 20px;
+    }
+    .rightIntro p:nth-child(3) {
+        margin-top: 80px;
+        text-indent: 30px;
+        line-height: 27px;
+    }
+    .rightIntro p {
+        font-size: 23px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .rightIntro h3 {
+        font-size: 38px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .rightIntro h4 {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: right;
+        margin-top: 20px;
+    }
+    .rightIntro p:nth-child(3) {
+        margin-top: 50px;
+        text-indent: 30px;
+        line-height: 25px;
+    }
+    .rightIntro p {
+        font-size: 22px;
+        text-align: justify;
+    }
+    .rightIntro p:nth-child(4) {
+        margin-top: 40px;
+        text-indent: 30px;
+        line-height: 25px;
+    }
+    .rightIntro p:nth-child(5) {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .leftIntro {
+        display: none;
+    }
+    .rightIntro {
+        width: 100%;
+        height: 906px;
+    }
+    .rightIntroBox {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .rightIntroBox h3 {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 132px;
+        margin-bottom: 20px;
+    }
+    .rightIntroBox h4 {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 60px;
+    }
+    .rightIntroBox p {
+        font-size: 23px;
+    }
+    .rightIntroBox p:nth-child(3) {
+        line-height: 30px;
+    }
+    .rightIntroBox p:nth-child(4) {
+        line-height: 28px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .rightIntroBox h3 {
+        text-align: center;
+        font-size: 35px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .leftIntro {
+        display: none;
+    }
+    .rightIntro {
+        width: 100%;
+        height: 594px;
+    }
+    .rightIntroBox {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .rightIntroBox h3 {
+        text-align: center;
+        font-size: 35px;
+        margin-top: 132px;
+        margin-bottom: 20px;
+    }
+    .rightIntroBox h4 {
+        text-align: center;
+        font-size: 19px;
+        margin-bottom: 26px;
+    }
+    .rightIntroBox p {
+        font-size: 15px;
+    }
+    .rightIntroBox p:nth-child(3) {
+        line-height: 40px;
+    }
+    .rightIntroBox p:nth-child(4) {
+        line-height: 40px;
+        margin-top: 50px;
+    }
+}
+
+
+/* for team bio slogan */
+
+@media screen and (max-width:800px) {
+    .bioSlogan {
+        height: 350px;
+    }
+    .bioSlogan h3 {
+        font-size: 40px;
+        margin-top: 125px;
+    }
+    .bioSlogan h4 {
+        font-size: 18px;
+    }
+    .teamBio {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .bioSlogan h3 {
+        font-size: 40px;
+        margin-top: 100px;
+    }
+    .bioSlogan h4 {
+        font-size: 18px;
+    }
+    .teamBio {
+        margin-bottom: 100px;
+    }
+}
+
+
+/* for teamBio portrait */
+
+@media screen and (max-width:768px) {
+    .overlay {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .teamPortraitButton {
+        margin-bottom: 0;
+    }
+    .teamPortraitButton ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .teamPortraitButton ul li {
+        width: 346px;
+        height: 346px;
+        margin: 0 auto;
+    }
+    .overlay {
+        font-size: 30px;
+        top: 50%;
+        left: 50%;
+        height: 346px;
+        margin-top: 110px;
+    }
+}
+
+
+/* for lightbox  */
+
+@media screen and (max-width:1640px) {
+    .lightBoxBio {
+        margin-left: 100px;
+    }
+    #portraitContainer {
+        width: 450px;
+        height: 450px;
+        -moz-border-radius: 265px;
+        -webkit-border-radius: 265px;
+        border-radius: 265px;
+    }
+}
+
+@media screen and (max-width:1330px) {
+    .contactButton {
+        margin-top: 60px;
+    }
+    .rightBox p {
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width:1094px) {
+    .lightBox {
+        top: 0;
+        height: 100%;
+    }
+    .leftBox {
+        width: 50%;
+        height: 30%;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .lightBoxBio {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+        align-items: center;
+    }
+    .rightBox {
+        width: 80%;
+        height: 60%;
+        position: relative;
+        top: 60%;
+        margin: 0 auto;
+    }
+    #portraitContainer {
+        width: 400px;
+        height: 400px;
+        -moz-border-radius: 265px;
+        -webkit-border-radius: 265px;
+        border-radius: 265px;
+    }
+    .rightBox p {
+        line-height: 25px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:874px) {
+    #portraitContainer {
+        width: 300px;
+        height: 300px;
+    }
+    .rightBox {
+        margin-top: 10px;
+    }
+    .leftBox {
+        height: 10%;
+    }
+}
+
+@media screen and (max-width:801px) {
+    #portraitContainer {
+        width: 300px;
+        height: 300px;
+        -moz-border-radius: 200px;
+        -webkit-border-radius: 200px;
+        border-radius: 200px;
+        margin-bottom: 5px;
+    }
+    .leftBox {
+        height: 5%;
+    }
+    .contactButton {
+        display: block;
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 50px;
+        margin-top: 50px;
+    }
+    .rightBox {
+        width: 90%;
+        height: 40%;
+    }
+    .bio-name {
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .bio-email {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .bio-phone {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .rightBox p {
+        line-height: 22px;
+        font-size: 10px;
+    }
+    .lightBoxBio {
+        height: 70%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .lightBoxBio {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .leftBox {
+        justify-content: center;
+        align-items: center;
+    }
+    .rightBox p {
+        display: none;
+    }
+    .lightBoxButton {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #portraitContainer {
+        width: 250px;
+        height: 250px;
+        -moz-border-radius: 200px;
+        -webkit-border-radius: 200px;
+        border-radius: 200px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #portraitContainer {
+        width: 200px;
+        height: 200px;
+        -moz-border-radius: 200px;
+        -webkit-border-radius: 200px;
+        border-radius: 200px;
+        margin-bottom: 5px;
+    }
+    .lightBoxButton {
+        width: 2px;
+        height: 2px;
+        left: 80%;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .lightBox {
+        width: 100%;
+        height: 30%;
+        top: 0;
+    }
+    #portraitContainer {
+        width: 150px;
+        height: 150px;
+    }
+    .lightBoxButton {
+        width: 1px;
+        height: 1px;
+        left: 80%;
+    }
+}
 
 
 /* -------------------------------- ABOUT PAGE END------------------------------ */
@@ -455,6 +1558,115 @@ nav {
 
 /* -------------------------------- CONTACT PAGE ------------------------------ */
 
+.ContactContent>.eyecatcher{
+  justify-content: space-around;
+  padding: 100px 0px 100px 0px;
+  height: 800px;
+}
+.dividerLine {
+  width: 120px;
+  height: 8px;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+.contactDetail {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  width: 350px;
+}
+.phones {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.location {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.hours {
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.formBox {
+  background-color: #C0D8EB;
+  padding: 100px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactInput {
+  width: 400px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+option, .developer {
+  font-weight: bold;
+  color: #ADADAD;
+  padding-left: 40px;
+}
+.messageBox {
+  padding-left: 40px;
+  width: 400px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 40px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
+  .contactDetail {
+    width: 500px;
+  }
+  .contactInput {
+    width: 672px;
+    height: 75px;
+    font-size: 30px;
+  }
+  .messageBox {
+    width: 672px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .contactDetail {
+    font-size: 30px;
+    width: 700px;
+  }
+  .dividerLine {
+    width: 145px;
+  }
+  .ContactContent>.eyecatcher{
+    padding: 80px 0px 40px 0px;
+  }
+  .contactInput {
+    width: 850px;
+    height: 75px;
+    font-size: 30px;
+  }
+  .messageBox {
+    width: 850px;
+    font-size: 30px;
+  }
+}
 
 /* -------------------------------- CONTACT PAGE END------------------------------ */
 
@@ -465,8 +1677,6 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 980px;
-    
 }
 
 .footerEmail {
@@ -490,8 +1700,8 @@ footer {
 }
 
 .inputhomeArea {
-    width: 70vw;
-    height: 5vw;
+    width: 40%;
+    height: 75px;
     border: none;
     border-radius: 5px;
 }
@@ -501,6 +1711,10 @@ body input::placeholder {
     color: #ADADAD;
     font-size: 2.5vw;
     padding-left:10px;
+}
+textarea::placeholder {
+    font-weight: bold;
+    color: #ADADAD;
 }
 
 .footerSend a {
@@ -527,11 +1741,18 @@ body input::placeholder {
 .footerInfo {
     background-color: #0D1132;
     height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footerLogo {
+    width: 383px;
+    height: 119px;
     margin-top: 130px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .footerContact ul li {
@@ -550,7 +1771,7 @@ body input::placeholder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 10%;
+    width: 300px;
     justify-content: space-evenly;
     margin: 0 auto;
     padding: 0;
@@ -558,12 +1779,131 @@ body input::placeholder {
 
 .SocialMedia ul li {
     list-style-type: none;
-    width: 40px;
-    height: 40px;
-    padding: 2px;
+    width: 67px;
+    height: 67px;
 }
 
 .copyRight {
     color: white;
     margin-top: 90px;
 }
+
+
+
+/* ----------for footer t/m version-------- */
+
+
+/* for footer email*/
+
+@media screen and (max-width:768px) {
+    .footerEmail {
+        height: 247px;
+    }
+    .footerEmail p {
+        font-size: 30px;
+        margin-top: 80px;
+    }
+    .footerSend {
+        margin-top: 35px;
+    }
+    .inputhomeArea {
+        height: 40px;
+        font-size: 20px;
+    }
+    .footerSend a {
+        display: inline-block;
+        width: 110px;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 15px;
+        margin-left: 16px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .footerEmail {
+        height: 221px;
+    }
+    .footerEmail p {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .footerSend {
+        margin-top: 35px;
+    }
+    .inputhomeArea {
+        width: 80%;
+        height: 38px;
+        font-size: 20px;
+    }
+    .footerSend a {
+        display: inline-block;
+        width: 102px;
+        padding: 13px;
+        border-radius: 5px;
+        font-size: 13px;
+        margin-left: 16px;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+
+/* for footer Info */
+
+@media screen and (max-width:768px) {
+    .footerInfo {
+        height: 413px;
+    }
+    .footerLogo {
+        margin-top: 55px;
+        width: 265px;
+        height: 83px;
+    }
+    .footerContact ul li {
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .SocialMedia ul li {
+        width: 40px;
+        height: 40px;
+        margin-top: 0;
+    }
+    .copyRight {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .footerInfo {
+        height: 390px;
+    }
+    .footerLogo {
+        margin-top: 55px;
+        width: 265px;
+        height: 83px;
+    }
+    .footerContact ul li {
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .SocialMedia ul {
+        width: 200px;
+    }
+    .SocialMedia ul li {
+        width: 30px;
+        height: 30px;
+        margin-top: 0;
+    }
+    .copyRight {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+}
+
