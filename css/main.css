@@ -41,7 +41,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin: 20px 0px;
+    margin-top: 40px;
 }
 
 a {
