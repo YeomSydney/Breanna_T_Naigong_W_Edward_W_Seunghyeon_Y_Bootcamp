@@ -210,10 +210,10 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center; 
+    width:100%;
 }
 
 .allFeatures{
-    padding:40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -225,38 +225,39 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    max-width: 800px;
+    text-align: center; 
+    width: 100%;
     height: 500px;
 }
 .featureHeroText{
     color:white;
     font-weight: 900;
-    font-size: 45px ;
+    font-size: 9vw ;
 }
 
 
 .featureDesc h3{
     margin: 50px 0 20px 0;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 5vw;
     color:#1C2366;
 }
 .featureDesc p{
-    font-size: 13px;
+    font-size: 1.7vw;
     color: black;
-    margin: 0 47px;
 }
 
 
 .featureNav{
-    width: 348px;
     height: 95px;
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin:50px 0;
+    margin: 50px 0;
+    padding: 0 60px;
+
 }
 .featureNav ul{
     width:100%;
@@ -271,9 +272,11 @@ nav {
     justify-content: center;
     font-size: 13px;
     font-weight: 600;
+    color:white;
     background-color: #73B4D8;
     border-radius: 5px;
-    width: 105px;
+    width: 20vw;
+    margin:5px;
     height: 38px;
 }
 .featureNav li:hover{
@@ -331,6 +334,22 @@ nav {
     transition-duration:0.2s;
     background-color: #73B4D8;
 }
+.featurePortFoot{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    max-width: 600px;
+    height:40px;
+    padding: 0 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+.featurePortFootIcons{
+    
+    display: flex;
+    width:40%;
+    justify-content: space-between;
+}
 
 
 #feature1{
@@ -355,6 +374,82 @@ nav {
     height:348px;
     width:348px;
 }
+/* ----------FEATURES PAGE TABLET SIZE------------ */
+@media screen and (min-width:700px ) {
+    
+}
+/* ---------------------TABLET SIZE END---------------------- */
+/* ----------------------FEATURES PAGE PC SIZE---------------------- */
+@media screen and (min-width:1000px) {
+
+    .featureNav{
+        flex-direction: row;
+    }
+    .featureNav li{
+        width: 12vw;
+    }
+
+    .featurePorts{
+        width:90vw; 
+        flex-direction: row;
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
+    }
+
+    .featurePortFoot{
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column; 
+        height:auto;
+        width:auto;
+        
+    }
+
+    .featurePortsHelp{
+        flex-direction: column;
+        width:500px;
+    }
+
+    .featurePortFootIcons{
+        flex-direction: row;
+        width:200px;
+        margin-top:20px;
+        justify-content: space-between;
+    }
+
+    #feature1{
+        background-image: url(../images/feature_page/pc-3d-modeling-feature.jpg);
+        height:588px;
+        background-size: COVER;        
+        background-position: center;
+        width: 808px;
+    }#feature2{
+        background-image: url(../images/feature_page/pc-character-modeling-feature.jpg);
+        height:588px;
+        background-size: COVER;
+        background-position: center;
+        width: 808px;
+    }#feature3{
+        background-image: url(../images/feature_page/pc-ballaBeer-feature.jpg);
+        height:588px;
+        background-size: COVER;
+        background-position: center;
+        width: 808px;
+    }#feature4{
+        background-image: url(../images/feature_page/pc-graphic-design.jpg);
+        height:588px;
+        background-size: COVER;
+        background-position: center;
+        width: 808px;
+    }
+    
+    
+
+    
+}
+/* ------------------------------PC SIZE END------------------------------ */
 /* -------------------------------- FEATURE PAGE END ------------------------------ */
 
 
@@ -371,6 +466,7 @@ footer {
     flex-direction: column;
     text-align: center;
     height: 980px;
+    
 }
 
 .footerEmail {
@@ -380,41 +476,52 @@ footer {
 
 .footerEmail p {
     color: white;
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 4vw;
+    font-weight: 900;
     margin-top: 104px;
 }
 
 .footerSend {
-    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:25px;
+    
 }
 
 .inputhomeArea {
-    width: 672px;
-    height: 75px;
+    width: 70vw;
+    height: 5vw;
     border: none;
     border-radius: 5px;
-    font-size: 30px;
 }
 
 body input::placeholder {
     font-weight: bold;
     color: #ADADAD;
-    padding-left: 40px;
+    font-size: 2.5vw;
+    padding-left:10px;
 }
 
 .footerSend a {
-    display: inline-block;
-    width: 210px;
-    padding: 30px 70px 26px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 13vw;
+    height:auto;
+    padding:10px;
     background-color: black;
-    border: none;
     border-radius: 5px;
     color: white;
-    font-size: 23px;
-    font-weight: bold;
-    text-align: center;
-    margin-left: 30px;
+    font-size: 2.5vw;
+    font-weight: 900;
+    margin-top:50px;
+
+}
+.footerSend a:hover{
+    transition-duration:0.4s;
+    color: #73B4D8;
 }
 
 .footerInfo {
