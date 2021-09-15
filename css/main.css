@@ -186,59 +186,6 @@ nav {
 
 /* -------------------------------- HOME PAGE ------------------------------ */
 
-.homeContainer {
-    margin: 0 auto;
-    display: grid;
-    
-}
-
-    .heroBanner {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        height: 825px;
-        padding:157px 60px;
-        background-color: #999;
-        color:white;
-    }
-
-    .heroWWYT{
-        font-weight:900;
-        font-size: 70px;
-        letter-spacing: -0.17em;
-
-    }
-
-    .heroSubtitle{
-        font-weight: 600;
-        font-size: 18px;
-        padding:105px 0px;
-    }
-
-    .heroTitle{
-        font-weight: 900;
-        font-size: 32px;
-        padding-bottom: 60px;
-    }
-
-    .heroButton{
-        font-weight: 600;
-        font-size: 21px;
-        padding: 20px;
-        background-color: white;
-        border-radius: 7px;
-    }
-
-    @media screen and (max-width: 1200px) {
-        .heroSubtitle{ 
-            color:red;
-        }
-    }    
-
-
-
 
 /* -------------------------------- HOME PAGE END ------------------------------ */
 
@@ -257,8 +204,158 @@ nav {
 
 /* -------------------------------- FEATURE PAGE ------------------------------ */
 
+.featureContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
 
-/* -------------------------------- PORTFOLIO PAGE END ------------------------------ */
+.allFeatures{
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featureHero{
+    background-image: url(../images/feature_page/m-banner-feature.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    height: 500px;
+}
+.featureHeroText{
+    color:white;
+    font-weight: 900;
+    font-size: 45px ;
+}
+
+
+.featureDesc h3{
+    margin: 50px 0 20px 0;
+    font-weight: 900;
+    font-size: 20px;
+    color:#1C2366;
+}
+.featureDesc p{
+    font-size: 13px;
+    color: black;
+    margin: 0 47px;
+}
+
+
+.featureNav{
+    width: 348px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin:50px 0;
+}
+.featureNav ul{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.featureNav li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #73B4D8;
+    border-radius: 5px;
+    width: 105px;
+    height: 38px;
+}
+.featureNav li:hover{
+    transition-duration: 0.2s;
+    background-color: #DD1F4B;
+    cursor: pointer;
+}
+
+
+.featurePorts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 125px ;
+    border-radius: 5px;
+    
+}
+.featurePortBody{
+    padding: 32px;
+}
+.featurePortHead{
+    font-weight: 800;
+    color:black;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.featureName{
+    font-weight: 900;
+    color:#1C2366;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+.featureText{
+    font-size: 15px;
+    color:black;
+    padding-bottom: 40px;
+}
+.featureDescripton{ 
+    /*spelled description wrong but it's too late to fix it*/
+    font-weight: 900;
+    font-size: 20px;
+    color: #1C2366;
+    margin-bottom: 20px;
+
+}
+.featurePorts a{
+    background-color: #1C2366;
+    padding:13px 20px;
+    border-radius: 5px;
+    color:white;
+}
+.featurePorts a:hover{
+    transition-duration:0.2s;
+    background-color: #73B4D8;
+}
+
+
+#feature1{
+    border-radius: 5px;
+    background-image: url(../images/feature_page/m-3d-modeling-feature.jpg);
+    height:348px;
+    width:348px;
+}
+#feature2{
+    border-radius: 5px;
+    background-image: url(../images/feature_page/m-character-modeling-feature.jpg);
+    height:348px;
+    width:348px;
+}#feature3{
+    border-radius: 5px;
+    background-image: url(../images/feature_page/m-ballaBeer.jpg);
+    height:348px;
+    width:348px;
+}#feature4{
+    border-radius: 5px;
+    background-image: url(../images/feature_page/m-graphic-design.jpg);
+    height:348px;
+    width:348px;
+}
+/* -------------------------------- FEATURE PAGE END ------------------------------ */
 
 
 /* -------------------------------- CONTACT PAGE ------------------------------ */
