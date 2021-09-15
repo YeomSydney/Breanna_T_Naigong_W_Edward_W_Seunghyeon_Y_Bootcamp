@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'montserratblack';
-    src: url('montserrat-black-webfont.woff2') format('woff2'),
-         url('montserrat-black-webfont.woff') format('woff');
+    src: url('../font/montserrat-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,8 +8,7 @@
 
 @font-face {
     font-family: 'montserratbold';
-    src: url('montserrat-bold-webfont.woff2') format('woff2'),
-         url('montserrat-bold-webfont.woff') format('woff');
+    src: url('../font/montserrat-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -18,8 +16,7 @@
 
 @font-face {
     font-family: 'montserratmedium';
-    src: url('montserrat-medium-webfont.woff2') format('woff2'),
-         url('montserrat-medium-webfont.woff') format('woff');
+    src: url('../font/montserrat-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -27,8 +24,7 @@
 
 @font-face {
     font-family: 'montserratsemibold';
-    src: url('montserrat-semibold-webfont.woff2') format('woff2'),
-         url('montserrat-semibold-webfont.woff') format('woff');
+    src: url('../font/montserrat-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -81,6 +77,10 @@ header {
 
 a {
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 
@@ -237,8 +237,451 @@ nav {
 
 
 /* -------------------------------- PORTFOLIO PAGE ------------------------------ */
-.portfolioContent{
+.tablet, .mobile {
+    display: none;
+}
+
+#portfolioContainer {
     margin: 0 auto;
+    font-family: 'montserratmedium', 'arial', 'calibri';
+    font-size: 30px;
+    text-align: center;
+}
+
+.portfolioBanner {
+    position: relative;
+}
+
+.portfolioBannerText {
+    position: absolute;
+    top: 357px;
+    left: 345px;
+    color: white;
+}
+
+.portfolioBannerText h2 {
+    font-size: 65px;
+    font-family: 'montserratblack', 'arial', 'calibri';
+    padding-bottom: 40px;
+}
+
+.portfolioBannerText p {
+    font-family: 'montserratsemibold', 'arial', 'calibri';
+    line-height: 45px;
+}
+
+.portfolioNav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolioNavBox {
+    display: block;
+    margin: 100px auto 0px auto;
+}
+
+.portfolioNav img {
+    border-collapse: collapse;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pc {
+    display: block;
+}
+
+.portfolioNav h3 {
+    width: 530px;
+    height: 120px;
+    display: block;
+    border-collapse: collapse;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #1c2366;
+    color: white;
+    font-family: 'montserratbold', 'arial', 'calibri';
+    padding-top: 44px;
+}
+
+.portfolioNav h3:hover {
+    width: 530px;
+    height: 120px;
+    display: block;
+    border-collapse: collapse;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #DD1F4B;
+    color: white;
+    font-family: 'montserratbold', 'arial', 'calibri';
+    padding-top: 44px;
+    transition: all .3s ease;
+}
+
+.latestPortfolio {
+    display: block;
+    background-color: #C0D8EB;
+    margin-top: 138px;
+    margin-bottom: 138px;
+    padding-top: 128px;
+    padding-bottom: 170px;
+}
+
+.portfolios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pc-latestPortfolio {
+    display: block;
+    border-collapse: collapse;
+}
+
+.latestPortfolio h2 {
+    font-family: 'montserratblack', 'arial', 'calibri';
+    font-size: 65px;
+    color: #1c2366;
+    padding-bottom: 70px;
+}
+
+.PortfolioText {
+    width: 670px;
+    height: 155px;
+    border-collapse: collapse;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #1c2366;
+    color: white;
+    padding-top: 41px;
+}
+
+.PortfolioText:hover {
+    width: 670px;
+    height: 155px;
+    border-collapse: collapse;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #DD1F4B;
+    color: white;
+    padding-top: 41px;
+    transition: all .3s ease;
+}
+
+.PortfolioText h3 {
+    font-family: 'montserratbold', 'arial', 'calibri';
+    padding-bottom: 18px;
+}
+
+.PortfolioText h3:hover {
+    font-size: 35px;
+    font-family: 'montserratbold', 'arial', 'calibri';
+    padding-bottom: 18px;
+    transition: all .3s ease;
+}
+
+.PortfolioText p {
+    font-size: 20px;
+    font-family: 'montserratsemibold', 'arial', 'calibri';
+}
+
+.portfolioBox {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.messageContactUs {
+    margin-bottom: 138px;
+}
+
+.messageContactUs h2 {
+    font-size: 65px;
+    font-family: 'montserratblack', 'arial', 'calibri';
+    color: #1c2366;
+}
+
+.messageContactUs p {
+    text-align: center;
+    font-family: 'montserratmedium';
+    padding-top: 54px;padding-bottom: 54px;
+    line-height: 40px;
+}
+
+.messageContactUs button {
+    width: 242px;
+    height: 75px;
+    padding: 15px;
+    font-size: 23px;
+    font-family: 'montserratbold', 'arial', 'calibri';
+    border-radius: 10px;
+    color: white;
+    background-color: #1c2366;
+}
+
+.messageContactUs button:hover {
+    width: 242px;
+    height: 75px;
+    padding: 15px;
+    font-size: 23px;
+    font-family: 'montserratbold', 'arial', 'calibri';
+    border-radius: 10px;
+    color: white;
+    background-color: #DD1F4B;
+    transition: all .3s ease;
+}
+
+/* slideshow css here */
+.showingSlides {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.previous, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.previous:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.dots {
+    text-align: center;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+    background-color: #414141;
+}
+
+@media screen and (max-width: 768px) {
+
+.pc, .mobile {
+    display: none;
+}
+
+.tablet {
+    display: block;
+}
+
+.portfolioBannerText {
+    top: 450px;
+    left: 41px;
+    right: 41px;
+}
+
+.portfolioBannerText h2 {
+    font-family: 'montserratblack', 'arial', 'calibri';
+    font-size: 65px;
+    padding-bottom: 36px;
+}
+
+.portfolioBannerText p {
+    font-family: 'montserratmedium', 'arial', 'calibri';
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.portfolioNav {
+    margin-top: 138px;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.portfolioNavBox {
+    margin-top: 30px;
+}
+
+.portfolioNavBox h3 {
+    width: 297px;
+    height: 90px;
+    font-size: 20px;
+    padding-top: 35px;
+}
+
+.portfolioNavBox h3:hover {
+    width: 297px;
+    height: 90px;
+    font-size: 20px;
+    padding-top: 35px;
+}
+
+.latestPortfolio h2 {
+    font-size: 40px;
+}
+
+.portfolios {
+    margin: 0 auto;
+}
+
+.portfolios img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.PortfolioText {
+    width: 454px;
+}
+
+.PortfolioText:hover {
+    width: 454px;
+}
+
+.PortfolioText h3:hover {
+    font-size: 33px;
+}
+
+.anotherPortfolio {
+    display: none;
+}
+
+.messageContactUs {
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.messageContactUs p {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.messageContactUs button {
+    width: 158px;
+    height: 55px;
+    font-size: 16px;
+}
+
+.messageContactUs button:hover {
+    width: 158px;
+    height: 55px;
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 428px) {
+
+.pc, .tablet {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+.portfolioBanner {
+    position: relative;
+}
+
+.portfolioBannerText {
+    position: absolute;
+    top: 280px;
+    left: 41px;
+    right: 41px;
+    color: white;
+}
+
+.portfolioBannerText h2 {
+    font-family: 'montserratblack', 'arial', 'calibri';
+    font-size: 45px;
+    padding-bottom: 36px;
+}
+
+.portfolioBannerText p {
+    font-family: 'montserratmedium', 'arial', 'calibri';
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.portfolioNav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolioNavBox h3 {
+    width: 345px;
+    height: 83px;
+    font-size: 20px;
+}
+
+.portfolioNavBox h3:hover {
+    width: 345px;
+    height: 83px;
+    font-size: 20px;
+}
+
+.latestPortfolio h2 {
+    font-size: 22px;
+}
+
+.PortfolioText {
+    width: 346px;
+    height: 104px;
+    padding-top: 28px;
+}
+
+.PortfolioText h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.PortfolioText h3:hover {
+    font-size: 25px;
+}
+
+.PortfolioText p {
+    font-size: 15px;
+}
+
+.messageContactUs {
+    margin-left: 41px;
+    margin-right: 41px;
+}
+
+.messageContactUs h2 {
+    font-size: 22px;
+}
+
+.messageContactUs p {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.messageContactUs button {
+    width: 99px;
+    height: 38px;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.messageContactUs button:hover {
+    width: 99px;
+    height: 38px;
+    font-size: 13px;
+    padding-top: 10px;
+}
 }
 
 /* -------------------------------- PORTFOLIO PAGE END------------------------------ */
@@ -258,11 +701,12 @@ nav {
 
 /* ------------for footer ------------*/
 
+/* ------------for footer ------------*/
+
 footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 980px;
 }
 
 .footerEmail {
@@ -282,7 +726,7 @@ footer {
 }
 
 .inputhomeArea {
-    width: 672px;
+    width: 40%;
     height: 75px;
     border: none;
     border-radius: 5px;
@@ -312,11 +756,18 @@ body input::placeholder {
 .footerInfo {
     background-color: #0D1132;
     height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footerLogo {
+    width: 383px;
+    height: 119px;
     margin-top: 130px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .footerContact ul li {
@@ -335,7 +786,7 @@ body input::placeholder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 10%;
+    width: 300px;
     justify-content: space-evenly;
     margin: 0 auto;
     padding: 0;
@@ -343,11 +794,129 @@ body input::placeholder {
 
 .SocialMedia ul li {
     list-style-type: none;
-    width: 40px;
-    height: 40px;
+    width: 67px;
+    height: 67px;
 }
 
 .copyRight {
     color: white;
-    margin-top: 90px;
+    margin-top: 50px;
+}
+
+
+/* ----------for footer t/m version-------- */
+
+
+/* for footer email*/
+
+@media screen and (max-width:768px) {
+    .footerEmail {
+        height: 247px;
+    }
+    .footerEmail p {
+        font-size: 30px;
+        margin-top: 80px;
+    }
+    .footerSend {
+        margin-top: 35px;
+    }
+    .inputhomeArea {
+        height: 40px;
+        font-size: 20px;
+    }
+    .footerSend a {
+        display: inline-block;
+        width: 110px;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 15px;
+        margin-left: 16px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .footerEmail {
+        height: 221px;
+    }
+    .footerEmail p {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .footerSend {
+        margin-top: 35px;
+    }
+    .inputhomeArea {
+        width: 80%;
+        height: 38px;
+        font-size: 20px;
+    }
+    .footerSend a {
+        display: inline-block;
+        width: 102px;
+        padding: 13px;
+        border-radius: 5px;
+        font-size: 13px;
+        margin-left: 16px;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+
+/* for footer Info */
+
+@media screen and (max-width:768px) {
+    .footerInfo {
+        height: 413px;
+    }
+    .footerLogo {
+        margin-top: 55px;
+        width: 265px;
+        height: 83px;
+    }
+    .footerContact ul li {
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .SocialMedia ul li {
+        width: 40px;
+        height: 40px;
+        margin-top: 0;
+    }
+    .copyRight {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .footerInfo {
+        height: 390px;
+    }
+    .footerLogo {
+        margin-top: 55px;
+        width: 265px;
+        height: 83px;
+    }
+    .footerContact ul li {
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .SocialMedia ul {
+        width: 200px;
+    }
+    .SocialMedia ul li {
+        width: 30px;
+        height: 30px;
+        margin-top: 0;
+    }
+    .copyRight {
+        margin-top: 20px;
+        font-size: 15px;
+    }
 }
