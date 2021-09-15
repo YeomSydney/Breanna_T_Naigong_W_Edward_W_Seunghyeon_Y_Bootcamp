@@ -797,7 +797,7 @@ nav {
     -moz-border-radius: 265px;
     -webkit-border-radius: 265px;
     border-radius: 265px;
-    background-image: url(../images/about_page/001.jpg);
+    background-image: url(../images/about_page/portrait_wang.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1399,4 +1399,3 @@ textarea::placeholder {
         margin-top: 20px;
     }
 }
-
