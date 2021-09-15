@@ -198,6 +198,572 @@ nav {
 /* -------------------------------- ABOUT PAGE ------------------------------ */
 
 
+/* --------------------about page content start-------------------------- */
+
+
+/* ------------about page banner------------ */
+
+.aboutBanner {
+    background: url(../images/about_page/pc-banner-about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    height: 915px;
+}
+
+.aboutBanner p {
+    font-size: 95px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding-top: 400px;
+}
+
+
+/* ------------about page banner end------------ */
+
+
+/* --------------- wwyt Intro ------------------ */
+
+.wwytIntro {
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-direction: row;
+    background-color: #1C2366;
+}
+
+.leftIntro {
+    width: 50%;
+    height: 1080px;
+    background: url(../images/about_page/pc-about-computer-intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rightIntro {
+    width: 50%;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightIntroBox {
+    width: 70%;
+    height: 792px;
+    margin: 0 auto;
+}
+
+.rightIntro h3 {
+    font-size: 55px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.rightIntro h4 {
+    font-size: 43px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 35px;
+}
+
+.rightIntro p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.rightIntro p:nth-child(3) {
+    margin-top: 125px;
+    text-indent: 30px;
+    line-height: 32px;
+}
+
+.rightIntro p:nth-child(4) {
+    margin-top: 50px;
+    text-indent: 30px;
+    line-height: 32px;
+}
+
+.rightIntro p:nth-child(5) {
+    margin-top: 50px;
+}
+
+
+/*-------------- wwyt Intro end ----------------- */
+
+
+/* --------------------------- Bio start -------------------------- */
+
+.teamBio {
+    /* height: 2031px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.bioSlogan {
+    width: 100%;
+    height: 533px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bioSlogan h3 {
+    font-size: 65px;
+    font-weight: bold;
+    color: #1C2366;
+    margin-top: 200px;
+}
+
+.bioSlogan h4 {
+    font-size: 30px;
+    color: black;
+}
+
+.bioSlogan h4:nth-child(2) {
+    margin-top: 30px;
+}
+
+.bioSlogan h4:nth-child(3) {
+    margin-top: 10px;
+}
+
+.teamPortraitButton {
+    width: 100%;
+}
+
+.teamPortraitButton ul li {
+    float: left;
+}
+
+.wang,
+.yeom,
+.willems,
+.trachsell {
+    width: 50%;
+    height: 50%;
+    /* background: url(../images/about_page/pc-wwyt-wang-about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    position: relative;
+}
+
+.hoverText {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: ease-in-out 0.6s;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(8px);
+}
+
+.overlay {
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1C2366;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+}
+
+.photo:hover .hoverText {
+    opacity: 90%;
+    transform: scale(1.01);
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------- */
+
+
+/*
+.yeom {
+    width: 960px;
+    height: 750px;
+    position: relative;
+    background: url(../images/about_page/pc-wwyt-yeom-about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.willems {
+    width: 960px;
+    height: 750px;
+    position: relative;
+    background: url(../images/about_page/pc-wwyt-willems-about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.trachsell {
+    width: 960px;
+    height: 750px;
+    position: relative;
+    background: url(../images/about_page/pc-wwyt-trachsell-about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+
+/* ------------------ portrait dynamic part ------------------- */
+
+
+/* --------------- light box style------------- */
+
+.teamBio {
+    position: relative;
+}
+
+.lightBox {
+    width: 1920px;
+    height: 1080px;
+    background: url(../images/about_page/pc_lightBox_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    top: 35%;
+    display: none;
+}
+
+.show-lightbox {
+    display: block;
+}
+
+.lightBoxButton {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    position: absolute;
+    left: 90%;
+    top: 0;
+}
+
+.lightBox .close {
+    margin-top: 85px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+    background-color: #1C2366;
+}
+
+.close:hover {
+    color: #DD1F4B;
+    transition: .5s;
+}
+
+.lightBox .next {
+    margin-top: 392px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+    background-color: #1C2366;
+}
+
+
+/* ------------------------------------- */
+
+.lightBoxBio {
+    display: flex;
+    flex-direction: row;
+    width: 1507px;
+    height: 700px;
+    margin-top: 135px;
+    margin-left: 200px;
+}
+
+.leftBox {
+    width: 36%;
+    height: 700px;
+    text-align: center;
+}
+
+#portraitContainer {
+    width: 530px;
+    height: 530px;
+    -moz-border-radius: 265px;
+    -webkit-border-radius: 265px;
+    border-radius: 265px;
+    background-image: url(../images/about_page/001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bio-name {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.bio-email {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.bio-phone {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* ------------------------------------ */
+
+.rightBox {
+    width: 950px;
+    height: 700px;
+    position: relative;
+}
+
+.bio-Info {
+    font-size: 20px;
+    line-height: 40px;
+    text-indent: 50px;
+}
+
+.contactButton {
+    display: block;
+    width: 210px;
+    height: 75px;
+    background-color: #1C2366;
+    border-radius: 7px;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 75px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: auto;
+}
+
+.contactButton:hover {
+    filter: brightness(120%);
+    transition: ease-in-out 1s;
+    color: #DD1F4B;
+}
+
+
+/* --------------------------- Bio end  --------------------------- */
+
+
+/* ------------------- About page media query kick in -------------------*/
+
+
+/* for banner img */
+
+@media screen and (max-width:428px) {
+    .aboutBanner {
+        background: url(../images/about_page/m-banner-about.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 826px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .aboutBanner {
+        background: url(../images/about_page/t-banner-about.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 1240px;
+    }
+}
+
+
+/* for banner h3 */
+
+@media screen and (max-width:768px) {
+    .aboutBanner p {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .aboutBanner p {
+        font-size: 45px;
+    }
+}
+
+
+/* for wwytIntro */
+
+@media screen and (max-width:1436px) {
+    .rightIntro h3 {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .rightIntro h4 {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: right;
+        margin-top: 30px;
+    }
+    .rightIntro p:nth-child(3) {
+        margin-top: 100px;
+        text-indent: 30px;
+        line-height: 28px;
+    }
+    .rightIntro p {
+        font-size: 23px;
+        text-align: justify;
+    }
+    .rightIntro p:nth-child(4) {
+        margin-top: 45px;
+        text-indent: 30px;
+        line-height: 28px;
+    }
+    .rightIntro p:nth-child(5) {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .rightIntro h3 {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .rightIntro h4 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: right;
+        margin-top: 20px;
+    }
+    .rightIntro p:nth-child(3) {
+        margin-top: 80px;
+        text-indent: 30px;
+        line-height: 27px;
+    }
+    .rightIntro p {
+        font-size: 23px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .rightIntro h3 {
+        font-size: 38px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .rightIntro h4 {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: right;
+        margin-top: 20px;
+    }
+    .rightIntro p:nth-child(3) {
+        margin-top: 50px;
+        text-indent: 30px;
+        line-height: 25px;
+    }
+    .rightIntro p {
+        font-size: 22px;
+        text-align: justify;
+    }
+    .rightIntro p:nth-child(4) {
+        margin-top: 40px;
+        text-indent: 30px;
+        line-height: 25px;
+    }
+    .rightIntro p:nth-child(5) {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .leftIntro {
+        display: none;
+    }
+    .rightIntro {
+        width: 100%;
+        height: 906px;
+    }
+    .rightIntroBox {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .rightIntroBox h3 {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 132px;
+        margin-bottom: 20px;
+    }
+    .rightIntroBox h4 {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 60px;
+    }
+    .rightIntroBox p {
+        font-size: 23px;
+    }
+    .rightIntroBox p:nth-child(3) {
+        line-height: 30px;
+    }
+    .rightIntroBox p:nth-child(4) {
+        line-height: 28px;
+        margin-top: 50px;
+    }
+}
+
+
+/* for team bio slogan */
+
+@media screen and (max-width:800px) {
+    .bioSlogan {
+        height: 350px;
+    }
+    .bioSlogan h3 {
+        font-size: 40px;
+        margin-top: 125px;
+    }
+    .bioSlogan h4 {
+        font-size: 18px;
+    }
+    .teamBio {
+        margin-bottom: 100px;
+    }
+}
+
+
 /* -------------------------------- ABOUT PAGE END------------------------------ */
 
 
@@ -225,7 +791,6 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 980px;
 }
 
 .footerEmail {
@@ -245,7 +810,7 @@ footer {
 }
 
 .inputhomeArea {
-    width: 672px;
+    width: 40%;
     height: 75px;
     border: none;
     border-radius: 5px;
@@ -275,11 +840,18 @@ body input::placeholder {
 .footerInfo {
     background-color: #0D1132;
     height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footerLogo {
+    width: 383px;
+    height: 119px;
     margin-top: 130px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .footerContact ul li {
@@ -298,7 +870,7 @@ body input::placeholder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 10%;
+    width: 300px;
     justify-content: space-evenly;
     margin: 0 auto;
     padding: 0;
@@ -306,11 +878,127 @@ body input::placeholder {
 
 .SocialMedia ul li {
     list-style-type: none;
-    width: 40px;
-    height: 40px;
+    width: 67px;
+    height: 67px;
 }
 
 .copyRight {
     color: white;
-    margin-top: 90px;
+    margin-top: 50px;
+}
+
+
+/* ----------for footer t/m version-------- */
+
+
+/* for footer email*/
+
+@media screen and (max-width:768px) {
+    .footerEmail {
+        height: 247px;
+    }
+    .footerEmail p {
+        font-size: 30px;
+        margin-top: 80px;
+    }
+    .footerSend {
+        margin-top: 35px;
+    }
+    .inputhomeArea {
+        height: 40px;
+        font-size: 20px;
+    }
+    .footerSend a {
+        display: inline-block;
+        width: 110px;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 15px;
+        margin-left: 16px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .footerEmail {
+        height: 221px;
+    }
+    .footerEmail p {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .footerSend {
+        margin-top: 35px;
+    }
+    .inputhomeArea {
+        width: 80%;
+        height: 38px;
+        font-size: 20px;
+    }
+    .footerSend a {
+        display: inline-block;
+        width: 102px;
+        padding: 13px;
+        border-radius: 5px;
+        font-size: 13px;
+        margin-left: 16px;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+
+/* for footer Info */
+
+@media screen and (max-width:768px) {
+    .footerInfo {
+        height: 413px;
+    }
+    .footerLogo {
+        margin-top: 55px;
+        width: 265px;
+        height: 83px;
+    }
+    .footerContact ul li {
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .SocialMedia ul li {
+        width: 40px;
+        height: 40px;
+        margin-top: 0;
+    }
+    .copyRight {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .footerInfo {
+        height: 390px;
+    }
+    .footerLogo {
+        margin-top: 55px;
+        width: 265px;
+        height: 83px;
+    }
+    .footerContact ul li {
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .SocialMedia ul {
+        width: 200px;
+    }
+    .SocialMedia ul li {
+        width: 30px;
+        height: 30px;
+        margin-top: 0;
+    }
+    .copyRight {
+        margin-top: 20px;
+    }
 }
