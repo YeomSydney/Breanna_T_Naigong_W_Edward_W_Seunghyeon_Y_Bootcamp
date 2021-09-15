@@ -359,10 +359,6 @@ nav {
 .trachsell {
     width: 50%;
     height: 50%;
-    /* background: url(../images/about_page/pc-wwyt-wang-about.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
     position: relative;
 }
 
@@ -399,41 +395,6 @@ nav {
     filter: brightness(110%);
     cursor: pointer;
 }
-
-
-/* ------------------------------------------- */
-
-
-/*
-.yeom {
-    width: 960px;
-    height: 750px;
-    position: relative;
-    background: url(../images/about_page/pc-wwyt-yeom-about.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.willems {
-    width: 960px;
-    height: 750px;
-    position: relative;
-    background: url(../images/about_page/pc-wwyt-willems-about.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.trachsell {
-    width: 960px;
-    height: 750px;
-    position: relative;
-    background: url(../images/about_page/pc-wwyt-trachsell-about.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-} */
 
 
 /* ------------------ portrait dynamic part ------------------- */
