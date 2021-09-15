@@ -326,11 +326,11 @@ nav {
     padding-bottom: 170px;
 }
 
-.portfolios {
+/* .portfolios {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
 
 .pc-latestPortfolio {
     display: block;
@@ -429,12 +429,90 @@ nav {
     transition: all .3s ease;
 }
 
-/* slideshow css here */
+/* Start slideshow css */
+
+.portfolioSlideBox {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.portfolioShowing {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolioSlides {
+    display: inline-block;
+}
+
+.slide-container {
+    width: 1920px;
+    height: 601px;
+    position: relative;
+    overflow: hidden;
+}
+
+.previous, .next {
+    display: inline-block;
+    position: absolute;
+    background-color: #eee;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 16px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.previous:hover, .next:hover {
+    background-color: #DD1F4B;
+}
+
+.previous {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* slideshow dots navigation */
+
+.navigation-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 32px;
+    align-items: center;
+    margin: 55px 0 0 0;
+}
+
+.dot {
+    background-color: #eee;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.dot.active {
+    background-color: #000;
+}
+
+/*
 .showingSlides {
-    max-width: 100%;
+    max-width: 1380px;
     position: relative;
     margin: auto;
 }
+
 
 .mySlides {
     display: none;
@@ -448,35 +526,57 @@ nav {
     padding: 16px;
     font-size: 20px;
     transition: all 0.3s ease;
-    border-radius: 0 3px 3px 0;
     user-select: none;
+}
+
+.previous {
+    left: 0;
+    border-radius: 3px;
 }
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 3px;
 }
 
 .previous:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.103);
 }
 
-.dots {
+.dot {
+    display: inline-block;
     text-align: center;
     cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
+    height: 20px;
+    width: 20px;
+    margin: 55px 2px 0px 2px;
     background-color: #bbb;
     border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .active, .dot:hover {
     background-color: #414141;
 }
 
+.fadingEffect {
+    -webkit-animation-name: fadingEffect;
+    -webkit-animation-duration: 0.8s;
+    animation-name: fadingEffect;
+    animation-duration: 0.8s;
+}
+
+@-webkit-keyframes fadingEffect {
+    from {opacity: 10}
+    to {opacity: 1}
+}
+
+@keyframes fadingEffect {
+    from {opacity: 10}
+    to {opacity: 1}
+} */
+
+/* End of slider css */
 @media screen and (max-width: 768px) {
 
 .pc, .mobile {
@@ -597,7 +697,7 @@ nav {
 
 .portfolioBannerText {
     position: absolute;
-    top: 280px;
+    top: 270px;
     left: 41px;
     right: 41px;
     color: white;
@@ -616,8 +716,7 @@ nav {
 }
 
 .portfolioNav {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
 }
 
 .portfolioNavBox h3 {
