@@ -326,11 +326,11 @@ nav {
     padding-bottom: 170px;
 }
 
-/* .portfolios {
+.portfolios {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-} */
+}
 
 .pc-latestPortfolio {
     display: block;
@@ -431,7 +431,7 @@ nav {
 
 /* Start slideshow css */
 
-.portfolioSlideBox {
+.mySlides {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -445,15 +445,11 @@ nav {
     justify-content: center;
 }
 
-.portfolioSlides {
-    display: inline-block;
-}
-
 .slide-container {
     width: 1920px;
     height: 601px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .previous, .next {
