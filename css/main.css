@@ -1307,8 +1307,253 @@ nav {
 
 /* -------------------------------- FEATURE PAGE ------------------------------ */
 
+.featureContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    width:100%;
+}
 
-/* -------------------------------- PORTFOLIO PAGE END ------------------------------ */
+.allFeatures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featureHero{
+    background-image: url(../images/feature_page/m-banner-feature.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    width: 100%;
+    height: 500px;
+}
+.featureHeroText{
+    color:white;
+    font-weight: 900;
+    font-size: 9vw ;
+}
+
+
+.featureDesc h3{
+    margin: 50px 0 20px 0;
+    font-weight: 900;
+    font-size: 5vw;
+    color:#1C2366;
+}
+.featureDesc p{
+    font-size: 1.7vw;
+    color: black;
+}
+
+
+.featureNav{
+    height: 95px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+    padding: 0 60px;
+
+}
+.featureNav ul{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.featureNav li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    color:white;
+    background-color: #73B4D8;
+    border-radius: 5px;
+    width: 20vw;
+    margin:5px;
+    height: 38px;
+}
+.featureNav li:hover{
+    transition-duration: 0.2s;
+    background-color: #DD1F4B;
+    cursor: pointer;
+}
+
+
+.featurePorts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 125px ;
+    border-radius: 5px;
+    
+}
+.featurePortBody{
+    padding: 32px;
+}
+.featurePortHead{
+    font-weight: 800;
+    color:black;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.featureName{
+    font-weight: 900;
+    color:#1C2366;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+.featureText{
+    font-size: 15px;
+    color:black;
+    padding-bottom: 40px;
+}
+.featureDescripton{ 
+    /*spelled description wrong but it's too late to fix it*/
+    font-weight: 900;
+    font-size: 20px;
+    color: #1C2366;
+    margin-bottom: 20px;
+
+}
+.featurePorts a{
+    background-color: #1C2366;
+    padding:13px 20px;
+    border-radius: 5px;
+    color:white;
+}
+.featurePorts a:hover{
+    transition-duration:0.2s;
+    background-color: #73B4D8;
+}
+.featurePortFoot{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    max-width: 600px;
+    height:40px;
+    padding: 0 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+.featurePortFootIcons{
+    
+    display: flex;
+    width:40%;
+    justify-content: space-between;
+}
+
+
+#feature1{
+    border-radius: 5px;
+    background-image: url(../images/feature_page/m-3d-modeling-feature.jpg);
+    height:348px;
+    width:348px;
+}
+#feature2{
+    border-radius: 5px;
+    background-image: url(../images/feature_page/m-character-modeling-feature.jpg);
+    height:348px;
+    width:348px;
+}#feature3{
+    border-radius: 5px;
+    background-image: url(../images/feature_page/m-ballaBeer.jpg);
+    height:348px;
+    width:348px;
+}#feature4{
+    border-radius: 5px;
+    background-image: url(../images/feature_page/m-graphic-design.jpg);
+    height:348px;
+    width:348px;
+}
+/* ----------FEATURES PAGE TABLET SIZE------------ */
+@media screen and (min-width:700px ) {
+    
+}
+/* ---------------------TABLET SIZE END---------------------- */
+/* ----------------------FEATURES PAGE PC SIZE---------------------- */
+@media screen and (min-width:1000px) {
+
+    .featureNav{
+        flex-direction: row;
+    }
+    .featureNav li{
+        width: 12vw;
+    }
+
+    .featurePorts{
+        width:90vw; 
+        flex-direction: row;
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
+    }
+
+    .featurePortFoot{
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column; 
+        height:auto;
+        width:auto;
+        
+    }
+
+    .featurePortsHelp{
+        flex-direction: column;
+        width:500px;
+    }
+
+    .featurePortFootIcons{
+        flex-direction: row;
+        width:200px;
+        margin-top:20px;
+        justify-content: space-between;
+    }
+
+    #feature1{
+        background-image: url(../images/feature_page/pc-3d-modeling-feature.jpg);
+        height:588px;
+        background-size: COVER;        
+        background-position: center;
+        width: 808px;
+    }#feature2{
+        background-image: url(../images/feature_page/pc-character-modeling-feature.jpg);
+        height:588px;
+        background-size: COVER;
+        background-position: center;
+        width: 808px;
+    }#feature3{
+        background-image: url(../images/feature_page/pc-ballaBeer-feature.jpg);
+        height:588px;
+        background-size: COVER;
+        background-position: center;
+        width: 808px;
+    }#feature4{
+        background-image: url(../images/feature_page/pc-graphic-design.jpg);
+        height:588px;
+        background-size: COVER;
+        background-position: center;
+        width: 808px;
+    }
+    
+    
+
+    
+}
+/* ------------------------------PC SIZE END------------------------------ */
+/* -------------------------------- FEATURE PAGE END ------------------------------ */
 
 
 /* -------------------------------- CONTACT PAGE ------------------------------ */
@@ -1441,13 +1686,17 @@ footer {
 
 .footerEmail p {
     color: white;
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 4vw;
+    font-weight: 900;
     margin-top: 104px;
 }
 
 .footerSend {
-    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:25px;
+    
 }
 
 .inputhomeArea {
@@ -1455,13 +1704,13 @@ footer {
     height: 75px;
     border: none;
     border-radius: 5px;
-    font-size: 30px;
 }
 
 body input::placeholder {
     font-weight: bold;
     color: #ADADAD;
-    padding-left: 40px;
+    font-size: 2.5vw;
+    padding-left:10px;
 }
 textarea::placeholder {
     font-weight: bold;
@@ -1469,17 +1718,24 @@ textarea::placeholder {
 }
 
 .footerSend a {
-    display: inline-block;
-    width: 210px;
-    padding: 30px 70px 26px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 13vw;
+    height:auto;
+    padding:10px;
     background-color: black;
-    border: none;
     border-radius: 5px;
     color: white;
-    font-size: 23px;
-    font-weight: bold;
-    text-align: center;
-    margin-left: 30px;
+    font-size: 2.5vw;
+    font-weight: 900;
+    margin-top:50px;
+
+}
+.footerSend a:hover{
+    transition-duration:0.4s;
+    color: #73B4D8;
 }
 
 .footerInfo {
@@ -1508,7 +1764,7 @@ textarea::placeholder {
 
 .SocialMedia {
     text-align: center;
-    margin-top: 35px;
+    margin-top:35px;
 }
 
 .SocialMedia ul {
@@ -1531,8 +1787,7 @@ textarea::placeholder {
     color: white;
     margin-top: 90px;
 }
-    margin-top: 50px;
-}
+
 
 
 /* ----------for footer t/m version-------- */
