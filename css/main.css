@@ -1457,13 +1457,13 @@ nav {
 
 #feature1{
     border-radius: 5px;
-    background-image: url(../images/feature_page/m-3d-modeling-feature.jpg);
+    background-image: url(../images/feature_page/m-gehwol.jpg);
     height:348px;
     width:348px;
 }
 #feature2{
     border-radius: 5px;
-    background-image: url(../images/feature_page/m-character-modeling-feature.jpg);
+    background-image: url(../images/feature_page/m-Lysol.jpg);
     height:348px;
     width:348px;
 }#feature3{
@@ -1473,7 +1473,7 @@ nav {
     width:348px;
 }#feature4{
     border-radius: 5px;
-    background-image: url(../images/feature_page/m-graphic-design.jpg);
+    background-image: url(../images/feature_page/m-greyRidge.jpg);
     height:348px;
     width:348px;
 }
@@ -1523,13 +1523,13 @@ nav {
     }
 
     #feature1{
-        background-image: url(../images/feature_page/pc-3d-modeling-feature.jpg);
+        background-image: url(../images/feature_page/pc-gehwol.jpg);
         height:588px;
         background-size: COVER;        
         background-position: center;
         width: 808px;
     }#feature2{
-        background-image: url(../images/feature_page/pc-character-modeling-feature.jpg);
+        background-image: url(../images/feature_page/pc-Lysol.jpg);
         height:588px;
         background-size: COVER;
         background-position: center;
@@ -1541,7 +1541,7 @@ nav {
         background-position: center;
         width: 808px;
     }#feature4{
-        background-image: url(../images/feature_page/pc-graphic-design.jpg);
+        background-image: url(../images/feature_page/pc-greyRidge.jpg);
         height:588px;
         background-size: COVER;
         background-position: center;
