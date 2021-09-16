@@ -1744,16 +1744,13 @@ footer {
 
 .footerEmail p {
     color: white;
-    font-size: 4vw;
-    font-weight: 900;
+    font-size: 50px;
+    font-weight: bold;
     margin-top: 104px;
 }
 
 .footerSend {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 25px;
+    margin-top: 47px;
 }
 
 .inputhomeArea {
@@ -1766,8 +1763,7 @@ footer {
 body input::placeholder {
     font-weight: bold;
     color: #ADADAD;
-    font-size: 2.5vw;
-    padding-left: 10px;
+    padding-left: 40px;
 }
 
 textarea::placeholder {
@@ -1776,19 +1772,17 @@ textarea::placeholder {
 }
 
 .footerSend a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 13vw;
-    height: auto;
-    padding: 10px;
+    display: inline-block;
+    width: 210px;
+    padding: 30px 70px 26px 70px;
     background-color: black;
+    border: none;
     border-radius: 5px;
     color: white;
-    font-size: 2.5vw;
-    font-weight: 900;
-    margin-top: 50px;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30px;
 }
 
 .footerSend a:hover {
