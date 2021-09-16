@@ -356,6 +356,35 @@ nav {
     padding-bottom: 70px;
 }
 
+.portfolioShowingBox {
+    display: inline-block;
+}
+
+.portfolioContainerBox button {
+    margin-top: 100px;
+    width: 242px;
+    height: 75px;
+    padding: 15px;
+    font-size: 23px;
+    font-family: 'montserratbold', 'arial', 'calibri';
+    border-radius: 10px;
+    color: white;
+    background-color: #1c2366;
+}
+
+.portfolioContainerBox button:hover {
+    margin-top: 100px;
+    width: 242px;
+    height: 75px;
+    padding: 15px;
+    font-size: 23px;
+    font-family: 'montserratbold', 'arial', 'calibri';
+    border-radius: 10px;
+    color: white;
+    background-color: #DD1F4B;
+    transition: all 0.3s ease;
+}
+
 .PortfolioText {
     width: 670px;
     height: 155px;
@@ -382,13 +411,6 @@ nav {
 .PortfolioText h3 {
     font-family: 'montserratbold', 'arial', 'calibri';
     padding-bottom: 18px;
-}
-
-.PortfolioText h3:hover {
-    font-size: 35px;
-    font-family: 'montserratbold', 'arial', 'calibri';
-    padding-bottom: 18px;
-    transition: all .3s ease;
 }
 
 .PortfolioText p {
@@ -439,79 +461,6 @@ nav {
     color: white;
     background-color: #DD1F4B;
     transition: all .3s ease;
-}
-
-/* Start slideshow css */
-
-.mySlides {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.portfolioShowing {
-    display: flex;
-    justify-content: center;
-}
-
-.slide-container {
-    width: 1920px;
-    height: 601px;
-    position: relative;
-    /* overflow: hidden; */
-}
-
-.previous, .next {
-    display: inline-block;
-    position: absolute;
-    background-color: #eee;
-    top: 40%;
-    transform: translateY(-50%);
-    padding: 16px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.4s ease;
-}
-
-.previous:hover, .next:hover {
-    background-color: #DD1F4B;
-}
-
-.previous {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-/* slideshow dots navigation */
-
-.navigation-dots {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 32px;
-    align-items: center;
-    margin: 55px 0 0 0;
-}
-
-.dot {
-    background-color: #eee;
-    height: 25px;
-    width: 25px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: all .4s ease;
-}
-
-.dot.active {
-    background-color: #000;
 }
 
 /* End of slider css */
@@ -578,6 +527,18 @@ nav {
 .portfolios img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.portfolioContainerBox button {
+    width: 158px;
+    height: 55px;
+    font-size: 16px;
+}
+    
+.porfolioContainerBox button:hover {
+    width: 158px;
+    height: 55px;
+    font-size: 16px;
 }
 
 .PortfolioText {
@@ -704,20 +665,6 @@ nav {
 .messageContactUs p {
     font-size: 15px;
     line-height: 22px;
-}
-
-.messageContactUs button {
-    width: 99px;
-    height: 38px;
-    font-size: 13px;
-    padding-top: 10px;
-}
-
-.messageContactUs button:hover {
-    width: 99px;
-    height: 38px;
-    font-size: 13px;
-    padding-top: 10px;
 }
 }
 
