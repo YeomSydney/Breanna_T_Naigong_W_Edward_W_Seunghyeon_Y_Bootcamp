@@ -361,7 +361,7 @@ nav {
 }
 
 .portfolioContainerBox button {
-    margin-top: 100px;
+    margin-top: 80px;
     width: 242px;
     height: 75px;
     padding: 15px;
@@ -373,7 +373,7 @@ nav {
 }
 
 .portfolioContainerBox button:hover {
-    margin-top: 100px;
+    margin-top: 80px;
     width: 242px;
     height: 75px;
     padding: 15px;
