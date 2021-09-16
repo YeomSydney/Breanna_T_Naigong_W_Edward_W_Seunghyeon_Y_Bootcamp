@@ -83,6 +83,18 @@ button {
     cursor: pointer;
 }
 
+.headerLogo {
+    width: 50%;
+    margin-left: 50px;
+}
+
+@media screen and (max-width:426px) {
+    .headerLogo {
+        width: 196px;
+        height: 60px;
+    }
+}
+
 
 /*---------------------------------------- */
 
@@ -501,76 +513,6 @@ nav {
 .dot.active {
     background-color: #000;
 }
-
-/*
-.showingSlides {
-    max-width: 1380px;
-    position: relative;
-    margin: auto;
-}
-
-
-.mySlides {
-    display: none;
-}
-
-.previous, .next {
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    font-size: 20px;
-    transition: all 0.3s ease;
-    user-select: none;
-}
-
-.previous {
-    left: 0;
-    border-radius: 3px;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px;
-}
-
-.previous:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.103);
-}
-
-.dot {
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-    margin: 55px 2px 0px 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    transition: 0.3s ease;
-}
-
-.active, .dot:hover {
-    background-color: #414141;
-}
-
-.fadingEffect {
-    -webkit-animation-name: fadingEffect;
-    -webkit-animation-duration: 0.8s;
-    animation-name: fadingEffect;
-    animation-duration: 0.8s;
-}
-
-@-webkit-keyframes fadingEffect {
-    from {opacity: 10}
-    to {opacity: 1}
-}
-
-@keyframes fadingEffect {
-    from {opacity: 10}
-    to {opacity: 1}
-} */
 
 /* End of slider css */
 @media screen and (max-width: 768px) {
