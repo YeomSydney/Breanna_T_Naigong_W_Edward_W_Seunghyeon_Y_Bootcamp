@@ -1,34 +1,3 @@
-@font-face {
-    font-family: 'montserratblack';
-    src: url('../font/montserrat-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'montserratbold';
-    src: url('../font/montserrat-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'montserratmedium';
-    src: url('../font/montserrat-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'montserratsemibold';
-    src: url('../font/montserrat-semibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 .hidden {
     display: none;
 }
@@ -80,9 +49,6 @@ a {
     text-decoration: none;
 }
 
-button {
-    cursor: pointer;
-}
 .headerLogo {
     width: 50%;
     margin-left: 50px;
@@ -294,425 +260,6 @@ nav {
     color: #fff;
 }
 
-/* -------------------------------- PORTFOLIO PAGE ------------------------------ */
-.tablet, .mobile {
-    display: none;
-}
-
-#portfolioContainer {
-    margin: 0 auto;
-    font-family: 'montserratmedium', 'arial', 'calibri';
-    font-size: 30px;
-    text-align: center;
-}
-
-.portfolioBanner {
-    position: relative;
-}
-
-.portfolioBannerText {
-    position: absolute;
-    top: 357px;
-    left: 345px;
-    color: white;
-}
-
-.portfolioBannerText h2 {
-    font-size: 65px;
-    font-family: 'montserratblack', 'arial', 'calibri';
-    padding-bottom: 40px;
-}
-
-.portfolioBannerText p {
-    font-family: 'montserratsemibold', 'arial', 'calibri';
-    line-height: 45px;
-}
-
-.portfolioNav {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.portfolioNavBox {
-    display: block;
-    margin: 100px auto 0px auto;
-}
-
-.portfolioNav img {
-    border-collapse: collapse;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.pc {
-    display: block;
-}
-
-.portfolioNav h3 {
-    width: 530px;
-    height: 120px;
-    display: block;
-    border-collapse: collapse;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #1c2366;
-    color: white;
-    font-family: 'montserratbold', 'arial', 'calibri';
-    padding-top: 44px;
-}
-
-.portfolioNav h3:hover {
-    width: 530px;
-    height: 120px;
-    display: block;
-    border-collapse: collapse;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #DD1F4B;
-    color: white;
-    font-family: 'montserratbold', 'arial', 'calibri';
-    padding-top: 44px;
-    transition: all .3s ease;
-}
-
-.latestPortfolio {
-    display: block;
-    background-color: #C0D8EB;
-    margin-top: 138px;
-    margin-bottom: 138px;
-    padding-top: 128px;
-    padding-bottom: 170px;
-}
-
-.portfolios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.pc-latestPortfolio {
-    display: block;
-    border-collapse: collapse;
-}
-
-.latestPortfolio h2 {
-    font-family: 'montserratblack', 'arial', 'calibri';
-    font-size: 65px;
-    color: #1c2366;
-    padding-bottom: 70px;
-}
-
-.portfolioShowingBox {
-    display: inline-block;
-}
-
-.portfolioContainerBox button {
-    margin-top: 80px;
-    width: 242px;
-    height: 75px;
-    padding: 15px;
-    font-size: 23px;
-    font-family: 'montserratbold', 'arial', 'calibri';
-    border-radius: 10px;
-    color: white;
-    background-color: #1c2366;
-}
-
-.portfolioContainerBox button:hover {
-    margin-top: 80px;
-    width: 242px;
-    height: 75px;
-    padding: 15px;
-    font-size: 23px;
-    font-family: 'montserratbold', 'arial', 'calibri';
-    border-radius: 10px;
-    color: white;
-    background-color: #DD1F4B;
-    transition: all 0.3s ease;
-}
-
-.PortfolioText {
-    width: 670px;
-    height: 155px;
-    border-collapse: collapse;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #1c2366;
-    color: white;
-    padding-top: 41px;
-}
-
-.PortfolioText:hover {
-    width: 670px;
-    height: 155px;
-    border-collapse: collapse;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #DD1F4B;
-    color: white;
-    padding-top: 41px;
-    transition: all .3s ease;
-}
-
-.PortfolioText h3 {
-    font-family: 'montserratbold', 'arial', 'calibri';
-    padding-bottom: 18px;
-}
-
-.PortfolioText p {
-    font-size: 20px;
-    font-family: 'montserratsemibold', 'arial', 'calibri';
-}
-
-.portfolioBox {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.messageContactUs {
-    margin-bottom: 138px;
-}
-
-.messageContactUs h2 {
-    font-size: 65px;
-    font-family: 'montserratblack', 'arial', 'calibri';
-    color: #1c2366;
-}
-
-.messageContactUs p {
-    text-align: center;
-    font-family: 'montserratmedium';
-    padding-top: 54px;padding-bottom: 54px;
-    line-height: 40px;
-}
-
-.messageContactUs button {
-    width: 242px;
-    height: 75px;
-    padding: 15px;
-    font-size: 23px;
-    font-family: 'montserratbold', 'arial', 'calibri';
-    border-radius: 10px;
-    color: white;
-    background-color: #1c2366;
-}
-
-.messageContactUs button:hover {
-    width: 242px;
-    height: 75px;
-    padding: 15px;
-    font-size: 23px;
-    font-family: 'montserratbold', 'arial', 'calibri';
-    border-radius: 10px;
-    color: white;
-    background-color: #DD1F4B;
-    transition: all .3s ease;
-}
-
-/* End of slider css */
-@media screen and (max-width: 768px) {
-
-.pc, .mobile {
-    display: none;
-}
-
-.tablet {
-    display: block;
-}
-
-.portfolioBannerText {
-    top: 450px;
-    left: 41px;
-    right: 41px;
-}
-
-.portfolioBannerText h2 {
-    font-family: 'montserratblack', 'arial', 'calibri';
-    font-size: 65px;
-    padding-bottom: 36px;
-}
-
-.portfolioBannerText p {
-    font-family: 'montserratmedium', 'arial', 'calibri';
-    font-size: 23px;
-    line-height: 30px;
-}
-
-.portfolioNav {
-    margin-top: 138px;
-    margin-left: 55px;
-    margin-right: 55px;
-}
-
-.portfolioNavBox {
-    margin-top: 30px;
-}
-
-.portfolioNavBox h3 {
-    width: 297px;
-    height: 90px;
-    font-size: 20px;
-    padding-top: 35px;
-}
-
-.portfolioNavBox h3:hover {
-    width: 297px;
-    height: 90px;
-    font-size: 20px;
-    padding-top: 35px;
-}
-
-.latestPortfolio h2 {
-    font-size: 40px;
-}
-
-.portfolios {
-    margin: 0 auto;
-}
-
-.portfolios img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.portfolioContainerBox button {
-    width: 158px;
-    height: 55px;
-    font-size: 16px;
-}
-    
-.porfolioContainerBox button:hover {
-    width: 158px;
-    height: 55px;
-    font-size: 16px;
-}
-
-.PortfolioText {
-    width: 454px;
-}
-
-.PortfolioText:hover {
-    width: 454px;
-}
-
-.PortfolioText h3:hover {
-    font-size: 33px;
-}
-
-.anotherPortfolio {
-    display: none;
-}
-
-.messageContactUs {
-    margin-left: 55px;
-    margin-right: 55px;
-}
-
-.messageContactUs p {
-    font-size: 18px;
-    line-height: 23px;
-}
-
-.messageContactUs button {
-    width: 158px;
-    height: 55px;
-    font-size: 16px;
-}
-
-.messageContactUs button:hover {
-    width: 158px;
-    height: 55px;
-    font-size: 16px;
-}
-}
-
-@media screen and (max-width: 428px) {
-
-.pc, .tablet {
-    display: none;
-}
-
-.mobile {
-    display: block;
-}
-
-.portfolioBanner {
-    position: relative;
-}
-
-.portfolioBannerText {
-    position: absolute;
-    top: 270px;
-    left: 41px;
-    right: 41px;
-    color: white;
-}
-
-.portfolioBannerText h2 {
-    font-family: 'montserratblack', 'arial', 'calibri';
-    font-size: 45px;
-    padding-bottom: 36px;
-}
-
-.portfolioBannerText p {
-    font-family: 'montserratmedium', 'arial', 'calibri';
-    font-size: 18px;
-    line-height: 20px;
-}
-
-.portfolioNav {
-    margin: 30px auto;
-}
-
-.portfolioNavBox h3 {
-    width: 345px;
-    height: 83px;
-    font-size: 20px;
-}
-
-.portfolioNavBox h3:hover {
-    width: 345px;
-    height: 83px;
-    font-size: 20px;
-}
-
-.latestPortfolio h2 {
-    font-size: 22px;
-}
-
-.PortfolioText {
-    width: 346px;
-    height: 104px;
-    padding-top: 28px;
-}
-
-.PortfolioText h3 {
-    font-size: 20px;
-    padding-bottom: 10px;
-}
-
-.PortfolioText h3:hover {
-    font-size: 25px;
-}
-
-.PortfolioText p {
-    font-size: 15px;
-}
-
-.messageContactUs {
-    margin-left: 41px;
-    margin-right: 41px;
-}
-
-.messageContactUs h2 {
-    font-size: 22px;
-}
-
-.messageContactUs p {
-    font-size: 15px;
-    line-height: 22px;
-}
-}
 .cloudSection {
     background-image: url(../images/index_page/backgroundcloud.jpg);
     background-repeat: no-repeat;
@@ -827,12 +374,6 @@ nav {
     margin: 30px 0px 50px 0px;
 }
 
-/* ------------for footer ------------*/
-footer {
-
-}
-
-
 .aboutSection {
     background-image: url(../images/index_page/backgroundcloud.jpg);
     background-repeat: no-repeat;
@@ -881,14 +422,6 @@ footer {
     align-items: center;
 }
 
-.inputhomeArea {
-    width: 40%;
-    height: 75px;
-    border: none;
-    border-radius: 5px;
-    font-size: 30px;
-
-}
 .aboutButton p {
     margin-top: 0px;
 }
@@ -1015,23 +548,8 @@ footer {
     color: white;
     padding-top: 400px;
 }
-  
-.footerInfo {
-    background-color: #0D1132;
-    height: 620px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.footerLogo {
-    width: 383px;
-    height: 119px;
-    margin-top: 130px;
-    margin-bottom: 30px;
-    text-align: center;
-}
+
 /* ------------about page banner end------------ */
 
 
@@ -1113,27 +631,8 @@ footer {
 
 .teamBio {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 300px;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.SocialMedia ul li {
-    list-style-type: none;
-    width: 67px;
-    height: 67px;
-}
-
-.copyRight {
-    color: white;
-    margin-top: 50px;
     flex-direction: column;
 }
-
-
 
 .bioSlogan {
     width: 100%;
@@ -1997,33 +1496,19 @@ footer {
 
 #feature1 {
     border-radius: 5px;
-
     background-image: url(../images/feature_page/m-3d-modeling-feature.jpg);
     height: 348px;
     width: 348px;
-
-    background-image: url(../images/feature_page/m-gehwol.jpg);
-    height:348px;
-    width:348px;
-
 }
 
 #feature2 {
     border-radius: 5px;
-
     background-image: url(../images/feature_page/m-character-modeling-feature.jpg);
     height: 348px;
     width: 348px;
 }
 
 #feature3 {
-
-    background-image: url(../images/feature_page/m-Lysol.jpg);
-    height:348px;
-    width:348px;
-}
-#feature3{
-
     border-radius: 5px;
     background-image: url(../images/feature_page/m-ballaBeer.jpg);
     height: 348px;
@@ -2032,15 +1517,9 @@ footer {
 
 #feature4 {
     border-radius: 5px;
-
     background-image: url(../images/feature_page/m-graphic-design.jpg);
     height: 348px;
     width: 348px;
-
-    background-image: url(../images/feature_page/m-greyRidge.jpg);
-    height:348px;
-    width:348px;
-
 }
 
 
@@ -2085,7 +1564,6 @@ footer {
         margin-top: 20px;
         justify-content: space-between;
     }
-
     #feature1 {
         background-image: url(../images/feature_page/pc-3d-modeling-feature.jpg);
         height: 588px;
@@ -2096,18 +1574,6 @@ footer {
     #feature2 {
         background-image: url(../images/feature_page/pc-character-modeling-feature.jpg);
         height: 588px;
-  }
-
-    #feature1{
-        background-image: url(../images/feature_page/pc-gehwol.jpg);
-        height:588px;
-        background-size: COVER;        
-        background-position: center;
-        width: 808px;
-    }#feature2{
-        background-image: url(../images/feature_page/pc-Lysol.jpg);
-        height:588px;
-
         background-size: COVER;
         background-position: center;
         width: 808px;
@@ -2118,16 +1584,10 @@ footer {
         background-size: COVER;
         background-position: center;
         width: 808px;
-
     }
     #feature4 {
         background-image: url(../images/feature_page/pc-graphic-design.jpg);
         height: 588px;
-
-    }#feature4{
-        background-image: url(../images/feature_page/pc-greyRidge.jpg);
-        height:588px;
-
         background-size: COVER;
         background-position: center;
         width: 808px;
@@ -2284,16 +1744,13 @@ footer {
 
 .footerEmail p {
     color: white;
-    font-size: 4vw;
-    font-weight: 900;
+    font-size: 50px;
+    font-weight: bold;
     margin-top: 104px;
 }
 
 .footerSend {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 25px;
+    margin-top: 47px;
 }
 
 .inputhomeArea {
@@ -2306,8 +1763,7 @@ footer {
 body input::placeholder {
     font-weight: bold;
     color: #ADADAD;
-    font-size: 2.5vw;
-    padding-left: 10px;
+    padding-left: 40px;
 }
 
 textarea::placeholder {
@@ -2316,19 +1772,17 @@ textarea::placeholder {
 }
 
 .footerSend a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 13vw;
-    height: auto;
-    padding: 10px;
+    display: inline-block;
+    width: 210px;
+    padding: 30px 70px 26px 70px;
     background-color: black;
+    border: none;
     border-radius: 5px;
     color: white;
-    font-size: 2.5vw;
-    font-weight: 900;
-    margin-top: 50px;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30px;
 }
 
 .footerSend a:hover {
@@ -2385,6 +1839,7 @@ textarea::placeholder {
     color: white;
     margin-top: 90px;
 }
+
 
 /* ----------for footer t/m version-------- */
 
@@ -2594,4 +2049,495 @@ textarea::placeholder {
 
 .videoControl input {
     width: 90%;
+}
+
+
+/* ------------for portfolio------------ */
+
+
+/* -------------------------------- PORTFOLIO PAGE ------------------------------ */
+
+.tablet,
+.mobile {
+    display: none;
+}
+
+#portfolioContainer {
+    margin: 0 auto;
+    font-family: 'montserratmedium', 'arial', 'calibri';
+    font-size: 30px;
+    text-align: center;
+}
+
+.portfolioBanner {
+    position: relative;
+}
+
+.portfolioBannerText {
+    position: absolute;
+    top: 357px;
+    left: 345px;
+    color: white;
+}
+
+.portfolioBannerText h2 {
+    font-size: 65px;
+    font-family: 'montserratblack', 'arial', 'calibri';
+    padding-bottom: 40px;
+}
+
+.portfolioBannerText p {
+    font-family: 'montserratsemibold', 'arial', 'calibri';
+    line-height: 45px;
+}
+
+.portfolioNav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolioNavBox {
+    display: block;
+    margin: 100px auto 0px auto;
+}
+
+.portfolioNav img {
+    border-collapse: collapse;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pc {
+    display: block;
+}
+
+.portfolioNav h3 {
+    width: 530px;
+    height: 120px;
+    display: block;
+    border-collapse: collapse;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #1c2366;
+    color: white;
+    font-family: 'montserratbold', 'arial', 'calibri';
+    padding-top: 44px;
+}
+
+.portfolioNav h3:hover {
+    width: 530px;
+    height: 120px;
+    display: block;
+    border-collapse: collapse;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #DD1F4B;
+    color: white;
+    font-family: 'montserratbold', 'arial', 'calibri';
+    padding-top: 44px;
+    transition: all .3s ease;
+}
+
+.latestPortfolio {
+    display: block;
+    background-color: #C0D8EB;
+    margin-top: 138px;
+    margin-bottom: 138px;
+    padding-top: 128px;
+    padding-bottom: 170px;
+}
+
+.portfolios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pc-latestPortfolio {
+    display: block;
+    border-collapse: collapse;
+}
+
+.latestPortfolio h2 {
+    font-family: 'montserratblack', 'arial', 'calibri';
+    font-size: 65px;
+    color: #1c2366;
+    padding-bottom: 70px;
+}
+
+.portfolioShowingBox {
+    display: inline-block;
+}
+
+.portfolioContainerBox button {
+    margin-top: 80px;
+    width: 242px;
+    height: 75px;
+    padding: 15px;
+    font-size: 23px;
+    font-family: 'montserratbold', 'arial', 'calibri';
+    border-radius: 10px;
+    color: white;
+    background-color: #1c2366;
+}
+
+.portfolioContainerBox button:hover {
+    margin-top: 80px;
+    width: 242px;
+    height: 75px;
+    padding: 15px;
+    font-size: 23px;
+    font-family: 'montserratbold', 'arial', 'calibri';
+    border-radius: 10px;
+    color: white;
+    background-color: #DD1F4B;
+    transition: all 0.3s ease;
+}
+
+.PortfolioText {
+    width: 670px;
+    height: 155px;
+    border-collapse: collapse;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #1c2366;
+    color: white;
+    padding-top: 41px;
+}
+
+.PortfolioText:hover {
+    width: 670px;
+    height: 155px;
+    border-collapse: collapse;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #DD1F4B;
+    color: white;
+    padding-top: 41px;
+    transition: all .3s ease;
+}
+
+.PortfolioText h3 {
+    font-family: 'montserratbold', 'arial', 'calibri';
+    padding-bottom: 18px;
+}
+
+.PortfolioText p {
+    font-size: 20px;
+    font-family: 'montserratsemibold', 'arial', 'calibri';
+}
+
+.portfolioBox {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.messageContactUs {
+    margin-bottom: 138px;
+}
+
+.messageContactUs h2 {
+    font-size: 65px;
+    font-family: 'montserratblack', 'arial', 'calibri';
+    color: #1c2366;
+}
+
+.messageContactUs p {
+    text-align: center;
+    font-family: 'montserratmedium';
+    padding-top: 54px;
+    padding-bottom: 54px;
+    line-height: 40px;
+}
+
+.messageContactUs button {
+    width: 242px;
+    height: 75px;
+    padding: 15px;
+    font-size: 23px;
+    font-family: 'montserratbold', 'arial', 'calibri';
+    border-radius: 10px;
+    color: white;
+    background-color: #1c2366;
+}
+
+.messageContactUs button:hover {
+    width: 242px;
+    height: 75px;
+    padding: 15px;
+    font-size: 23px;
+    font-family: 'montserratbold', 'arial', 'calibri';
+    border-radius: 10px;
+    color: white;
+    background-color: #DD1F4B;
+    transition: all .3s ease;
+}
+
+
+/* End of slider css */
+
+@media screen and (max-width: 768px) {
+    .pc,
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+    .portfolioBannerText {
+        top: 450px;
+        left: 41px;
+        right: 41px;
+    }
+    .portfolioBannerText h2 {
+        font-family: 'montserratblack', 'arial', 'calibri';
+        font-size: 65px;
+        padding-bottom: 36px;
+    }
+    .portfolioBannerText p {
+        font-family: 'montserratmedium', 'arial', 'calibri';
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .portfolioNav {
+        margin-top: 138px;
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+    .portfolioNavBox {
+        margin-top: 30px;
+    }
+    .portfolioNavBox h3 {
+        width: 297px;
+        height: 90px;
+        font-size: 20px;
+        padding-top: 35px;
+    }
+    .portfolioNavBox h3:hover {
+        width: 297px;
+        height: 90px;
+        font-size: 20px;
+        padding-top: 35px;
+    }
+    .latestPortfolio h2 {
+        font-size: 40px;
+    }
+    .portfolios {
+        margin: 0 auto;
+    }
+    .portfolios img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .portfolioContainerBox button {
+        width: 158px;
+        height: 55px;
+        font-size: 16px;
+    }
+    .porfolioContainerBox button:hover {
+        width: 158px;
+        height: 55px;
+        font-size: 16px;
+    }
+    .PortfolioText {
+        width: 454px;
+    }
+    .PortfolioText:hover {
+        width: 454px;
+    }
+    .PortfolioText h3:hover {
+        font-size: 33px;
+    }
+    .anotherPortfolio {
+        display: none;
+    }
+    .messageContactUs {
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+    .messageContactUs p {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .messageContactUs button {
+        width: 158px;
+        height: 55px;
+        font-size: 16px;
+    }
+    .messageContactUs button:hover {
+        width: 158px;
+        height: 55px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .pc,
+    .tablet {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .portfolioBanner {
+        position: relative;
+    }
+    .portfolioBannerText {
+        position: absolute;
+        top: 270px;
+        left: 41px;
+        right: 41px;
+        color: white;
+    }
+    .portfolioBannerText h2 {
+        font-family: 'montserratblack', 'arial', 'calibri';
+        font-size: 45px;
+        padding-bottom: 36px;
+    }
+    .portfolioBannerText p {
+        font-family: 'montserratmedium', 'arial', 'calibri';
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .portfolioNav {
+        margin: 30px auto;
+    }
+    .portfolioNavBox h3 {
+        width: 345px;
+        height: 83px;
+        font-size: 20px;
+    }
+    .portfolioNavBox h3:hover {
+        width: 345px;
+        height: 83px;
+        font-size: 20px;
+    }
+    .latestPortfolio h2 {
+        font-size: 22px;
+    }
+    .PortfolioText {
+        width: 346px;
+        height: 104px;
+        padding-top: 28px;
+    }
+    .PortfolioText h3 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .PortfolioText h3:hover {
+        font-size: 25px;
+    }
+    .PortfolioText p {
+        font-size: 15px;
+    }
+    .messageContactUs {
+        margin-left: 41px;
+        margin-right: 41px;
+    }
+    .messageContactUs h2 {
+        font-size: 22px;
+    }
+    .messageContactUs p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .cloudSection {
+        background-image: url(../images/index_page/backgroundcloud.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        width: auto;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 100px;
+    }
+    .cloudTitle {
+        color: #1C2366;
+        font-weight: bolder;
+        font-size: 40px;
+        text-align: center;
+    }
+    .cloudSection p {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 30px;
+        max-width: 330px;
+    }
+    .promoSection {
+        background-color: #1C2366;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .promoTitle {
+        color: #C0D8EB;
+        font-weight: bolder;
+        font-size: 40px;
+        text-align: center;
+        margin: 50px 0px 20px 0px;
+        max-width: 300px;
+    }
+    .promoTitle+p {
+        font-weight: bold;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        max-width: 400px;
+    }
+    .portfolioContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        margin-top: 30px;
+    }
+    .portfolioImage {
+        width: 190px;
+        height: 190px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .portfolioInfo {
+        width: 190px;
+        height: 190px;
+        border-radius: 0px 0px 10px 10px;
+        background-color: #73B4D8;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .portfolioTitle {
+        color: #1C2366;
+        font-weight: bold;
+        font-size: 1em;
+        text-align: center;
+    }
+    .blackLine {
+        width: 40px;
+        height: 5px;
+        background-color: #1C2366;
+    }
+    .portfolioDetail {
+        text-align: center;
+        font-weight: normal;
+        font-size: 15px;
+        color: #000;
+    }
+    #closerlook {
+        width: 250px;
+    }
+    .videoBox {
+        display: flex;
+        flex-direction: column;
+        background-color: #1C2366;
+        align-items: center;
+    }
+    .indexVideo {
+        width: 400px;
+        margin: 30px 0px 50px 0px;
+    }
 }
