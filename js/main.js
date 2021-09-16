@@ -7,7 +7,7 @@
         const nav = document.querySelector(".nav-links");
         const navLinks = document.querySelectorAll(".nav-links li");
 
-
+        // Burger Nav
 
         burger.addEventListener("click", () => {
             //Toggle Nav
@@ -24,9 +24,8 @@
             //Burger Animation
             burger.classList.toggle("toggle");
         });
+
     })();
-
-
 
     // FUNCTIONS //
 
