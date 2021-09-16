@@ -712,7 +712,7 @@ nav {
     font-size: 15px;
     line-height: 22px;
 }
-  
+}
 .cloudSection {
     background-image: url(../images/index_page/backgroundcloud.jpg);
     background-repeat: no-repeat;
@@ -822,12 +822,16 @@ nav {
     align-items: center;
 }
 
-/* ------------for footer ------------*/
-footer {
 .indexVideo {
     width: 400px;
     margin: 30px 0px 50px 0px;
 }
+
+/* ------------for footer ------------*/
+footer {
+
+}
+
 
 .aboutSection {
     background-image: url(../images/index_page/backgroundcloud.jpg);
@@ -883,6 +887,8 @@ footer {
     border: none;
     border-radius: 5px;
     font-size: 30px;
+
+}
 .aboutButton p {
     margin-top: 0px;
 }
@@ -1025,7 +1031,7 @@ footer {
     margin-top: 130px;
     margin-bottom: 30px;
     text-align: center;
-
+}
 /* ------------about page banner end------------ */
 
 
@@ -1124,10 +1130,10 @@ footer {
 .copyRight {
     color: white;
     margin-top: 50px;
-}
-
     flex-direction: column;
 }
+
+
 
 .bioSlogan {
     width: 100%;
